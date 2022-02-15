@@ -10,7 +10,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 |:--------------------|:-------------|
 |-d, --dest           | Specify theme destination directory (Default: $HOME/share/icons)|
 |-n, --name           | Specify theme name (Default: Colloid)|
-|-c, --color          | Specify color scheme [default,nord,dracula]|
+|-s, --scheme         | Specify color scheme [default,nord,dracula]|
 |-t, --theme          | Specify theme folder color variant(s) [default,purple,pink,red,orange,yellow,green,teal,grey,all] (Default: blue)|
 |-h, --help           | Show this help|
 
