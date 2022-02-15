@@ -14,7 +14,8 @@ SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 THEME_NAME=Colloid
 COLOR_VARIANTS=('' '-dark')
-THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
+SCHEME_VARIANTS=('' '-nord' '-dracula')
+THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-teal' '-grey')
 
 usage() {
 cat << EOF
@@ -23,7 +24,8 @@ cat << EOF
   OPTIONS:
     -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-    -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|grey|all] (Default: blue)
+    -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord]
+    -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|grey|all] (Default: blue)
     -h, --help              Show help
 EOF
 }
@@ -32,9 +34,10 @@ install() {
   local dest=${1}
   local name=${2}
   local theme=${3}
-  local color=${4}
+  local scheme=${4}
+  local color=${5}
 
-  local THEME_DIR=${dest}/${name}${theme}${color}
+  local THEME_DIR=${dest}/${name}${theme}${scheme}${color}
 
   [[ -d ${THEME_DIR} ]] && rm -rf ${THEME_DIR}
 
@@ -44,7 +47,7 @@ install() {
   cp -r ${SRC_DIR}/src/index.theme                                                         ${THEME_DIR}
 
   cd ${THEME_DIR}
-  sed -i "s/${name}/${name}${theme}${color}/g" index.theme
+  sed -i "s/${name}/${name}${theme}${scheme}${color}/g" index.theme
   sed -i "s/WhiteSur/WhiteSur${color}/g" index.theme
 
   if [[ ${color} == '' ]]; then
@@ -52,7 +55,9 @@ install() {
     cp -r ${SRC_DIR}/links/*                                                               ${THEME_DIR}
 
     if [[ ${theme} != '' ]]; then
-      cp -r ${SRC_DIR}/colors/color${theme}/*.svg                                          ${THEME_DIR}/places/scalable
+      cp -r ${SRC_DIR}/colors/color${theme}${scheme}/*.svg                                 ${THEME_DIR}/places/scalable
+    else
+      cp -r ${SRC_DIR}/colors/color-blue${scheme}/*.svg                                    ${THEME_DIR}/places/scalable
     fi
   fi
 
@@ -71,20 +76,20 @@ install() {
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/actions/32/*
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,mimetypes,places,status}/symbolic/*
 
-    cp -r ${SRC_DIR}/links/actions/{16,22,24,32,symbolic}                              ${THEME_DIR}/actions
-    cp -r ${SRC_DIR}/links/devices/{16,22,24,symbolic}                                 ${THEME_DIR}/devices
-    cp -r ${SRC_DIR}/links/places/{16,22,24,symbolic}                                  ${THEME_DIR}/places
-    cp -r ${SRC_DIR}/links/status/{16,22,24,symbolic}                                  ${THEME_DIR}/status
-    cp -r ${SRC_DIR}/links/apps/symbolic                                               ${THEME_DIR}/apps
-    cp -r ${SRC_DIR}/links/categories/symbolic                                         ${THEME_DIR}/categories
-    cp -r ${SRC_DIR}/links/mimetypes/symbolic                                          ${THEME_DIR}/mimetypes
+    cp -r ${SRC_DIR}/links/actions/{16,22,24,32,symbolic}                                  ${THEME_DIR}/actions
+    cp -r ${SRC_DIR}/links/devices/{16,22,24,symbolic}                                     ${THEME_DIR}/devices
+    cp -r ${SRC_DIR}/links/places/{16,22,24,symbolic}                                      ${THEME_DIR}/places
+    cp -r ${SRC_DIR}/links/status/{16,22,24,symbolic}                                      ${THEME_DIR}/status
+    cp -r ${SRC_DIR}/links/apps/symbolic                                                   ${THEME_DIR}/apps
+    cp -r ${SRC_DIR}/links/categories/symbolic                                             ${THEME_DIR}/categories
+    cp -r ${SRC_DIR}/links/mimetypes/symbolic                                              ${THEME_DIR}/mimetypes
 
     cd ${dest}
-    ln -s ../../${name}${theme}/apps/scalable ${name}${theme}-dark/apps/scalable
-    ln -s ../../${name}${theme}/devices/scalable ${name}${theme}-dark/devices/scalable
-    ln -s ../../${name}${theme}/places/scalable ${name}${theme}-dark/places/scalable
-    ln -s ../../${name}${theme}/categories/32 ${name}${theme}-dark/categories/32
-    ln -s ../../${name}${theme}/mimetypes/scalable ${name}${theme}-dark/mimetypes/scalable
+    ln -s ../../${name}${theme}${scheme}/apps/scalable ${name}${theme}${scheme}-dark/apps/scalable
+    ln -s ../../${name}${theme}${scheme}/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
+    ln -s ../../${name}${theme}${scheme}/places/scalable ${name}${theme}${scheme}-dark/places/scalable
+    ln -s ../../${name}${theme}${scheme}/categories/32 ${name}${theme}${scheme}-dark/categories/32
+    ln -s ../../${name}${theme}${scheme}/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
   fi
 
   (
@@ -111,6 +116,37 @@ while [[ "$#" -gt 0 ]]; do
     -n|--name)
       name="${2}"
       shift 2
+      ;;
+    -s|--scheme)
+      shift
+      for scheme in "${@}"; do
+        case "${scheme}" in
+          default)
+            schemes+=("${SCHEME_VARIANTS[0]}")
+            shift
+            ;;
+          nord)
+            schemes+=("${SCHEME_VARIANTS[1]}")
+            shift
+            ;;
+          dracula)
+            schemes+=("${SCHEME_VARIANTS[2]}")
+            shift
+            ;;
+          all)
+            schemes+=("${SCHEME_VARIANTS[@]}")
+            shift
+            ;;
+          -*|--*)
+            break
+            ;;
+          *)
+            prompt -e "ERROR: Unrecognized color schemes variant '$1'."
+            prompt -i "Try '$0 --help' for more information."
+            exit 1
+            ;;
+        esac
+      done
       ;;
     -t|--theme)
       shift
@@ -156,7 +192,7 @@ while [[ "$#" -gt 0 ]]; do
             break
             ;;
           *)
-            prompt -e "ERROR: Unrecognized theme variant '$1'."
+            prompt -e "ERROR: Unrecognized theme color variant '$1'."
             prompt -i "Try '$0 --help' for more information."
             exit 1
             ;;
@@ -179,14 +215,20 @@ if [[ "${#themes[@]}" -eq 0 ]] ; then
   themes=("${THEME_VARIANTS[0]}")
 fi
 
+if [[ "${#schemes[@]}" -eq 0 ]] ; then
+  schemes=("${SCHEME_VARIANTS[0]}")
+fi
+
 if [[ "${#colors[@]}" -eq 0 ]] ; then
   colors=("${COLOR_VARIANTS[@]}")
 fi
 
 install_theme() {
   for theme in "${themes[@]}"; do
-    for color in "${colors[@]}"; do
-      install "${dest:-${DEST_DIR}}" "${name:-${THEME_NAME}}" "${theme}" "${color}"
+    for scheme in "${schemes[@]}"; do
+      for color in "${colors[@]}"; do
+        install "${dest:-${DEST_DIR}}" "${name:-${THEME_NAME}}" "${theme}" "${scheme}" "${color}"
+      done
     done
   done
 }
