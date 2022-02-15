@@ -6,13 +6,13 @@
 
 Usage:  `./install.sh`  **[OPTIONS...]**
 
-|  OPTIONS:           | |
-|:--------------------|:-------------|
-|-d, --dest           | Specify theme destination directory (Default: $HOME/share/icons)|
-|-n, --name           | Specify theme name (Default: Colloid)|
-|-s, --scheme         | Specify color scheme [default,nord,dracula]|
-|-t, --theme          | Specify theme folder color variant(s) [default,purple,pink,red,orange,yellow,green,teal,grey,all] (Default: blue)|
-|-h, --help           | Show this help|
+```
+-d, --dest DIR          Specify destination directory (Default: /home/vince/.local/share/icons)
+-n, --name NAME         Specify theme name (Default: Colloid)
+-s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord]
+-t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+-h, --help              Show help
+```
 
 > For more information, run: `./install.sh --help`
 
