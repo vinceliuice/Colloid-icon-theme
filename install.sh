@@ -25,7 +25,7 @@ cat << EOF
     -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
     -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord]
-    -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|grey|all] (Default: blue)
+    -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
     -h, --help              Show help
 EOF
 }
@@ -141,8 +141,8 @@ while [[ "$#" -gt 0 ]]; do
             break
             ;;
           *)
-            prompt -e "ERROR: Unrecognized color schemes variant '$1'."
-            prompt -i "Try '$0 --help' for more information."
+            echo "ERROR: Unrecognized color schemes variant '$1'."
+            echo "Try '$0 --help' for more information."
             exit 1
             ;;
         esac
@@ -180,8 +180,12 @@ while [[ "$#" -gt 0 ]]; do
             themes+=("${THEME_VARIANTS[6]}")
             shift
             ;;
-          grey)
+          teal)
             themes+=("${THEME_VARIANTS[7]}")
+            shift
+            ;;
+          grey)
+            themes+=("${THEME_VARIANTS[8]}")
             shift
             ;;
           all)
@@ -192,8 +196,8 @@ while [[ "$#" -gt 0 ]]; do
             break
             ;;
           *)
-            prompt -e "ERROR: Unrecognized theme color variant '$1'."
-            prompt -i "Try '$0 --help' for more information."
+            echo "ERROR: Unrecognized theme color variant '$1'."
+            echo "Try '$0 --help' for more information."
             exit 1
             ;;
         esac
