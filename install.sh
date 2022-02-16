@@ -54,7 +54,7 @@ install() {
 
     if [[ ${theme} != '' ]]; then
       cp -r ${SRC_DIR}/colors/color${theme}${scheme}/*.svg                                 ${THEME_DIR}/places/scalable
-    else
+    elif [[ ${scheme} != '' ]]; then
       cp -r ${SRC_DIR}/colors/color-blue${scheme}/*.svg                                    ${THEME_DIR}/places/scalable
     fi
   fi
