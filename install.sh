@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 ROOT_UID=0
 DEST_DIR=
@@ -24,7 +24,7 @@ cat << EOF
   OPTIONS:
     -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-    -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord]
+    -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord|dracula]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
     -h, --help              Show help
 EOF
@@ -37,7 +37,7 @@ install() {
   local scheme=${4}
   local color=${5}
 
-  local THEME_DIR=${dest}/${name}${theme}${scheme}${color}
+  local THEME_DIR=${1}/${2}${3}${4}${5}
 
   [[ -d ${THEME_DIR} ]] && rm -rf ${THEME_DIR}
 
@@ -45,13 +45,11 @@ install() {
 
   mkdir -p                                                                                 ${THEME_DIR}
   cp -r ${SRC_DIR}/src/index.theme                                                         ${THEME_DIR}
-
-  cd ${THEME_DIR}
-  sed -i "s/${name}/${name}${theme}${scheme}${color}/g" index.theme
-  sed -i "s/WhiteSur/WhiteSur${color}/g" index.theme
+  sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                    ${THEME_DIR}/index.theme
+  sed -i "s/WhiteSur/WhiteSur${color}/g"                                                   ${THEME_DIR}/index.theme
 
   if [[ ${color} == '' ]]; then
-    cp -r ${SRC_DIR}/src/*                                                                 ${THEME_DIR}
+    cp -r ${SRC_DIR}/src/{actions,apps,categories,devices,mimetypes,places,status}         ${THEME_DIR}
     cp -r ${SRC_DIR}/links/*                                                               ${THEME_DIR}
 
     if [[ ${theme} != '' ]]; then
@@ -215,15 +213,15 @@ while [[ "$#" -gt 0 ]]; do
   esac
 done
 
-if [[ "${#themes[@]}" -eq 0 ]] ; then
+if [[ "${#themes[@]}" -eq 0 ]]; then
   themes=("${THEME_VARIANTS[0]}")
 fi
 
-if [[ "${#schemes[@]}" -eq 0 ]] ; then
+if [[ "${#schemes[@]}" -eq 0 ]]; then
   schemes=("${SCHEME_VARIANTS[0]}")
 fi
 
-if [[ "${#colors[@]}" -eq 0 ]] ; then
+if [[ "${#colors[@]}" -eq 0 ]]; then
   colors=("${COLOR_VARIANTS[@]}")
 fi
 
