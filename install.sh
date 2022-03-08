@@ -87,6 +87,7 @@ install() {
     ln -s ../../${name}${theme}${scheme}/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
     ln -s ../../${name}${theme}${scheme}/places/scalable ${name}${theme}${scheme}-dark/places/scalable
     ln -s ../../${name}${theme}${scheme}/categories/32 ${name}${theme}${scheme}-dark/categories/32
+    ln -s ../../${name}${theme}${scheme}/status/32 ${name}${theme}${scheme}-dark/status/32
     ln -s ../../${name}${theme}${scheme}/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
   fi
 
