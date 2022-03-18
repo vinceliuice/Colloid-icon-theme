@@ -13,6 +13,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -t, --theme VARIANTS    Specify folder color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
 -h, --help              Show help
 ```
+> For example: install teal nord version -> run: `./install.sh -s nord -t teal`
 
 > For more information, run: `./install.sh -h`
 
