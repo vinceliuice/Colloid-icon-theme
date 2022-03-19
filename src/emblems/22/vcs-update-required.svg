@@ -1,0 +1,17 @@
+<svg version="1.1" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter976" x="-.147" y="-.147" width="1.294" height="1.294" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.2592991"/>
+  </filter>
+ </defs>
+ <style id="current-color-scheme" type="text/css">.ColorScheme-NeutralText {
+            color:#f67400;
+        }
+        .ColorScheme-Text {
+            color:#232629;
+        }</style>
+ <rect transform="matrix(0 -3.7794 -3.7794 0 0 0)" x="-5.2918" y="-5.0272" width="4.2335" height="4.2335" rx="2.1172" ry="2.1172" fill="#000000" filter="url(#filter976)" opacity=".25" stroke-width="1.0001"/>
+ <rect transform="matrix(0,-1,-1,0,0,0)" x="-18.995" y="-18.999" width="15.998" height="15.998" rx="8.001" ry="8.001" fill="#ff7800" stroke-width="3.7794"/>
+ <path d="m11 3c-4.4321 0-7.9999 3.568-7.9999 7.9999 0 0.16818 0.0055 0.33446 0.015624 0.50002 0.25676-4.197 3.7206-7.4999 7.9844-7.4999 4.2638 0 7.7278 3.303 7.9844 7.4999 0.01013-0.16554 0.01565-0.33182 0.01565-0.50002 0-4.4321-3.568-7.9999-7.9999-7.9999z" fill="#ffffff" opacity=".1" stroke-width="3.7798"/>
+ <path d="m10.938 6.0039a5 5 0 0 0-3.4727 1.4629 5 5 0 0 0-1.457 3.5332h-1.0078l2 3 2-3h-0.99023a3 3 0 0 1 0.86914-2.1191 3 3 0 0 1 2.2871-0.87305l1.6582-1.6602a5 5 0 0 0-1.8867-0.34375zm4.0625 1.9961-2 3h1a3 3 0 0 1-0.87891 2.123 3 3 0 0 1-2.2812 0.86719l-1.6602 1.6621a5 5 0 0 0 5.3555-1.1152 5 5 0 0 0 1.4609-3.5371h1.0039l-2-3z" fill="#ffffff" stroke-width="3.7794"/>
+</svg>

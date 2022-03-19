@@ -1,0 +1,13 @@
+<svg width="22" height="22" version="1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter976" x="-.147" y="-.147" width="1.294" height="1.294" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.2592991"/>
+  </filter>
+ </defs>
+ <rect transform="matrix(0,-3.7794,-3.7794,0,0,0)" x="-5.2918" y="-5.0272" width="4.2335" height="4.2335" rx="2.1172" ry="2.1172" fill="#000000" filter="url(#filter976)" opacity=".25" stroke-width="1.0001"/>
+ <g transform="matrix(.4 0 0 .4 1.4 1.4)">
+  <circle cx="24" cy="24" r="20" fill="#78c367"/>
+  <path d="M26 38h-4v-4h4zm4.14-15.5l-1.8 1.84C26.9 25.8 26 27 26 30h-4v-1c0-2.2.9-4.2 2.34-5.66l2.48-2.52A3.91 3.91 0 0 0 28 18c0-2.2-1.8-4-4-4s-4 1.8-4 4h-4c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.76-.72 3.36-1.86 4.5z" fill="#fff"/>
+ </g>
+ <path d="m11 3c-4.432 0-8 3.568-8 8 0 0.16818 0.0055 0.33446 0.015625 0.5 0.25676-4.197 3.7206-7.5 7.9844-7.5s7.7276 3.303 7.9844 7.5c0.01013-0.16554 0.01563-0.33182 0.01563-0.5 0-4.432-3.568-8-8-8z" fill="#ffffff" opacity=".1" stroke-width="3.7798"/>
+</svg>

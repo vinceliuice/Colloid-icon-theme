@@ -13,7 +13,7 @@ fi
 SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 THEME_NAME=Colloid
-COLOR_VARIANTS=('' '-dark')
+COLOR_VARIANTS=('-light' '-dark' '')
 SCHEME_VARIANTS=('' '-nord' '-dracula')
 THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-teal' '-grey')
 
@@ -46,10 +46,9 @@ install() {
   mkdir -p                                                                                 ${THEME_DIR}
   cp -r ${SRC_DIR}/src/index.theme                                                         ${THEME_DIR}
   sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                    ${THEME_DIR}/index.theme
-  sed -i "s/WhiteSur/WhiteSur${color}/g"                                                   ${THEME_DIR}/index.theme
 
-  if [[ ${color} == '' ]]; then
-    cp -r ${SRC_DIR}/src/{actions,apps,categories,devices,mimetypes,places,status}         ${THEME_DIR}
+  if [[ ${color} == '-light' ]]; then
+    cp -r ${SRC_DIR}/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} ${THEME_DIR}
     cp -r ${SRC_DIR}/links/*                                                               ${THEME_DIR}
 
     if [[ ${theme} != '' ]]; then
@@ -60,10 +59,11 @@ install() {
   fi
 
   if [[ ${color} == '-dark' ]]; then
-    mkdir -p                                                                               ${THEME_DIR}/{apps,categories,devices,mimetypes,places,status}
+    mkdir -p                                                                               ${THEME_DIR}/{apps,categories,devices,emblems,mimetypes,places,status}
     cp -r ${SRC_DIR}/src/actions                                                           ${THEME_DIR}
     cp -r ${SRC_DIR}/src/apps/symbolic                                                     ${THEME_DIR}/apps
     cp -r ${SRC_DIR}/src/categories/symbolic                                               ${THEME_DIR}/categories
+    cp -r ${SRC_DIR}/src/emblems/symbolic                                                  ${THEME_DIR}/emblems
     cp -r ${SRC_DIR}/src/mimetypes/symbolic                                                ${THEME_DIR}/mimetypes
     cp -r ${SRC_DIR}/src/devices/{16,22,24,symbolic}                                       ${THEME_DIR}/devices
     cp -r ${SRC_DIR}/src/places/{16,22,24,symbolic}                                        ${THEME_DIR}/places
@@ -72,7 +72,7 @@ install() {
     # Change icon color for dark theme
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/actions/32/*
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,mimetypes,places,status}/symbolic/*
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*
 
     cp -r ${SRC_DIR}/links/actions/{16,22,24,32,symbolic}                                  ${THEME_DIR}/actions
     cp -r ${SRC_DIR}/links/devices/{16,22,24,symbolic}                                     ${THEME_DIR}/devices
@@ -80,6 +80,7 @@ install() {
     cp -r ${SRC_DIR}/links/status/{16,22,24,symbolic}                                      ${THEME_DIR}/status
     cp -r ${SRC_DIR}/links/apps/symbolic                                                   ${THEME_DIR}/apps
     cp -r ${SRC_DIR}/links/categories/symbolic                                             ${THEME_DIR}/categories
+    cp -r ${SRC_DIR}/links/emblems/symbolic                                                ${THEME_DIR}/emblems
     cp -r ${SRC_DIR}/links/mimetypes/symbolic                                              ${THEME_DIR}/mimetypes
 
     cd ${dest}
@@ -87,8 +88,29 @@ install() {
     ln -s ../../${name}${theme}${scheme}/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
     ln -s ../../${name}${theme}${scheme}/places/scalable ${name}${theme}${scheme}-dark/places/scalable
     ln -s ../../${name}${theme}${scheme}/categories/32 ${name}${theme}${scheme}-dark/categories/32
+    ln -s ../../${name}${theme}${scheme}/emblems/16 ${name}${theme}${scheme}-dark/emblems/16
+    ln -s ../../${name}${theme}${scheme}/emblems/22 ${name}${theme}${scheme}-dark/emblems/22
     ln -s ../../${name}${theme}${scheme}/status/32 ${name}${theme}${scheme}-dark/status/32
     ln -s ../../${name}${theme}${scheme}/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
+  fi
+
+  if [[ ${color} == '' ]]; then
+    mkdir -p                                                                               ${THEME_DIR}/status
+    cp -r ${SRC_DIR}/src/status/{16,22,24}                                                 ${THEME_DIR}/status
+    # Change icon color for dark panel
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/status/{16,22,24}/*
+    cp -r ${SRC_DIR}/links/status/{16,22,24}                                               ${THEME_DIR}/status
+
+    cd ${dest}
+    ln -s ../${name}${theme}${scheme}-light/apps ${name}${theme}${scheme}/apps
+    ln -s ../${name}${theme}${scheme}-light/actions ${name}${theme}${scheme}/actions
+    ln -s ../${name}${theme}${scheme}-light/devices ${name}${theme}${scheme}/devices
+    ln -s ../${name}${theme}${scheme}-light/emblems ${name}${theme}${scheme}/emblems
+    ln -s ../${name}${theme}${scheme}-light/places ${name}${theme}${scheme}/places
+    ln -s ../${name}${theme}${scheme}-light/categories ${name}${theme}${scheme}/categories
+    ln -s ../${name}${theme}${scheme}-light/mimetypes ${name}${theme}${scheme}/mimetypes
+    ln -s ../../${name}${theme}${scheme}-light/status/32 ${name}${theme}${scheme}/status/32
+    ln -s ../../${name}${theme}${scheme}-light/status/symbolic ${name}${theme}${scheme}/status/symbolic
   fi
 
   (
@@ -97,6 +119,7 @@ install() {
     ln -sf apps apps@2x
     ln -sf categories categories@2x
     ln -sf devices devices@2x
+    ln -sf emblems emblems@2x
     ln -sf mimetypes mimetypes@2x
     ln -sf places places@2x
     ln -sf status status@2x
