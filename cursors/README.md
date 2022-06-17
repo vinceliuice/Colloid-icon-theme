@@ -1,5 +1,5 @@
-# Fluent cursors
-This is an x-cursor theme inspired by Qogir theme and
+# Colloid cursors
+This is an x-cursor theme inspired by Colloid theme and
 based on [capitaine-cursors](https://github.com/keeferrourke/capitaine-cursors).
 
 ## Installation
@@ -34,5 +34,4 @@ This will generate the pixmaps and appropriate aliases.
 The freshly compiled cursor theme will be located in `dist/`
 
 ## Preview
-![01](preview-01.png)
-![02](preview-02.png)
+![01](preview.png)
