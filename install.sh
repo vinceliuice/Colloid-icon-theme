@@ -83,14 +83,14 @@ install() {
     cp -r ${SRC_DIR}/links/mimetypes/symbolic                                              ${THEME_DIR}/mimetypes
 
     cd ${dest}
-    ln -s ../../${name}${theme}${scheme}/apps/scalable ${name}${theme}${scheme}-dark/apps/scalable
-    ln -s ../../${name}${theme}${scheme}/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
-    ln -s ../../${name}${theme}${scheme}/places/scalable ${name}${theme}${scheme}-dark/places/scalable
-    ln -s ../../${name}${theme}${scheme}/categories/32 ${name}${theme}${scheme}-dark/categories/32
-    ln -s ../../${name}${theme}${scheme}/emblems/16 ${name}${theme}${scheme}-dark/emblems/16
-    ln -s ../../${name}${theme}${scheme}/emblems/22 ${name}${theme}${scheme}-dark/emblems/22
-    ln -s ../../${name}${theme}${scheme}/status/32 ${name}${theme}${scheme}-dark/status/32
-    ln -s ../../${name}${theme}${scheme}/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
+    ln -s ../../${name}${theme}${scheme}-light/apps/scalable ${name}${theme}${scheme}-dark/apps/scalable
+    ln -s ../../${name}${theme}${scheme}-light/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
+    ln -s ../../${name}${theme}${scheme}-light/places/scalable ${name}${theme}${scheme}-dark/places/scalable
+    ln -s ../../${name}${theme}${scheme}-light/categories/32 ${name}${theme}${scheme}-dark/categories/32
+    ln -s ../../${name}${theme}${scheme}-light/emblems/16 ${name}${theme}${scheme}-dark/emblems/16
+    ln -s ../../${name}${theme}${scheme}-light/emblems/22 ${name}${theme}${scheme}-dark/emblems/22
+    ln -s ../../${name}${theme}${scheme}-light/status/32 ${name}${theme}${scheme}-dark/status/32
+    ln -s ../../${name}${theme}${scheme}-light/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
   fi
 
   if [[ ${color} == '' ]]; then
