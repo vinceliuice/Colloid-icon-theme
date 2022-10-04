@@ -83,14 +83,14 @@ install() {
     cp -r ${SRC_DIR}/links/mimetypes/symbolic                                              ${THEME_DIR}/mimetypes
 
     cd ${dest}
-    ln -s ../../${name}${theme}${scheme}-light/apps/scalable ${name}${theme}${scheme}-dark/apps/scalable
-    ln -s ../../${name}${theme}${scheme}-light/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
-    ln -s ../../${name}${theme}${scheme}-light/places/scalable ${name}${theme}${scheme}-dark/places/scalable
-    ln -s ../../${name}${theme}${scheme}-light/categories/32 ${name}${theme}${scheme}-dark/categories/32
-    ln -s ../../${name}${theme}${scheme}-light/emblems/16 ${name}${theme}${scheme}-dark/emblems/16
-    ln -s ../../${name}${theme}${scheme}-light/emblems/22 ${name}${theme}${scheme}-dark/emblems/22
-    ln -s ../../${name}${theme}${scheme}-light/status/32 ${name}${theme}${scheme}-dark/status/32
-    ln -s ../../${name}${theme}${scheme}-light/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
+    ln -sf ../../${name}${theme}${scheme}-light/apps/scalable ${name}${theme}${scheme}-dark/apps/scalable
+    ln -sf ../../${name}${theme}${scheme}-light/devices/scalable ${name}${theme}${scheme}-dark/devices/scalable
+    ln -sf ../../${name}${theme}${scheme}-light/places/scalable ${name}${theme}${scheme}-dark/places/scalable
+    ln -sf ../../${name}${theme}${scheme}-light/categories/32 ${name}${theme}${scheme}-dark/categories/32
+    ln -sf ../../${name}${theme}${scheme}-light/emblems/16 ${name}${theme}${scheme}-dark/emblems/16
+    ln -sf ../../${name}${theme}${scheme}-light/emblems/22 ${name}${theme}${scheme}-dark/emblems/22
+    ln -sf ../../${name}${theme}${scheme}-light/status/32 ${name}${theme}${scheme}-dark/status/32
+    ln -sf ../../${name}${theme}${scheme}-light/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
   fi
 
   if [[ ${color} == '' ]]; then
@@ -101,15 +101,15 @@ install() {
     cp -r ${SRC_DIR}/links/status/{16,22,24}                                               ${THEME_DIR}/status
 
     cd ${dest}
-    ln -s ../${name}${theme}${scheme}-light/apps ${name}${theme}${scheme}/apps
-    ln -s ../${name}${theme}${scheme}-light/actions ${name}${theme}${scheme}/actions
-    ln -s ../${name}${theme}${scheme}-light/devices ${name}${theme}${scheme}/devices
-    ln -s ../${name}${theme}${scheme}-light/emblems ${name}${theme}${scheme}/emblems
-    ln -s ../${name}${theme}${scheme}-light/places ${name}${theme}${scheme}/places
-    ln -s ../${name}${theme}${scheme}-light/categories ${name}${theme}${scheme}/categories
-    ln -s ../${name}${theme}${scheme}-light/mimetypes ${name}${theme}${scheme}/mimetypes
-    ln -s ../../${name}${theme}${scheme}-light/status/32 ${name}${theme}${scheme}/status/32
-    ln -s ../../${name}${theme}${scheme}-light/status/symbolic ${name}${theme}${scheme}/status/symbolic
+    ln -sf ../${name}${theme}${scheme}-light/apps ${name}${theme}${scheme}/apps
+    ln -sf ../${name}${theme}${scheme}-light/actions ${name}${theme}${scheme}/actions
+    ln -sf ../${name}${theme}${scheme}-light/devices ${name}${theme}${scheme}/devices
+    ln -sf ../${name}${theme}${scheme}-light/emblems ${name}${theme}${scheme}/emblems
+    ln -sf ../${name}${theme}${scheme}-light/places ${name}${theme}${scheme}/places
+    ln -sf ../${name}${theme}${scheme}-light/categories ${name}${theme}${scheme}/categories
+    ln -sf ../${name}${theme}${scheme}-light/mimetypes ${name}${theme}${scheme}/mimetypes
+    ln -sf ../../${name}${theme}${scheme}-light/status/32 ${name}${theme}${scheme}/status/32
+    ln -sf ../../${name}${theme}${scheme}-light/status/symbolic ${name}${theme}${scheme}/status/symbolic
   fi
 
   (
