@@ -1,0 +1,14 @@
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="a" x="-.038932" y="-.033367" width="1.0779" height="1.0667" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation=".206"/>
+  </filter>
+ </defs>
+ <path transform="scale(3.7796)" d="m3.44 1.354a1.32 1.32 0 0 0-1.323 1.323v12.171c0 0.733 0.59 1.323 1.323 1.323h10.053a1.32 1.32 0 0 0 1.323-1.323v-10.318l-3.175-3.175z" filter="url(#a)" opacity=".15" style="paint-order:stroke fill markers"/>
+ <g transform="scale(3.7796)" fill-rule="evenodd">
+  <path transform="scale(.26458)" d="m13 4c-2.77 0-5 2.23-5 5v46c0 2.77 2.23 5 5 5h38c2.77 0 5-2.23 5-5v-39l-12-12z" fill="#1f96d6" style="paint-order:stroke fill markers"/>
+  <path d="m14.816 4.233-3.175-3.175v1.852c0 0.733 0.59 1.323 1.323 1.323z" fill="#ffffff" opacity=".35" style="paint-order:stroke fill markers"/>
+ </g>
+ <path d="m43.998 10.999v0.58584c0 3.001 2.23 5.4162 5.0004 5.4162h6.9998v-1.0016h-6.9998a4.9891 4.9891 0 0 1-5.0042-5.0004z" opacity=".1" stroke-width="3.7796" style="paint-order:stroke fill markers"/>
+ <path d="m22 24v6h-2v15c0 0.76175 0.26134 1 1 1h23v-15c0-0.76175-0.26135-1-1-1h-6v-6zm1 1h13v5h-4c-0.62732-0.86256-1.4545-1.4966-2.5-1.5-1.0483 8.5e-4 -1.871 0.63517-2.5 1.5h-4zm-2 6h22v4h-9.666c-1.4773 0-2.834 1.4765-2.834 3s1.3608 3.1105 2.834 3h9.666v4h-22zm14 5.5c0.73636 0 1.5 0.7406 1.5 1.5 0 0.75939-0.76364 1.5-1.5 1.5-0.7364 0-1.5-0.74061-1.5-1.5 0-0.7594 0.7636-1.5 1.5-1.5z" fill="#ffffff"/>
+</svg>

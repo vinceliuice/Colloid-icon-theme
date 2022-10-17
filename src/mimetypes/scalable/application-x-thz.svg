@@ -1,0 +1,22 @@
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="a-3" x="-.038932" y="-.033367" width="1.0779" height="1.0667" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation=".206"/>
+  </filter>
+ </defs>
+ <path transform="scale(3.7796)" d="m3.44 1.354a1.32 1.32 0 0 0-1.323 1.323v12.171c0 0.733 0.59 1.323 1.323 1.323h10.053a1.32 1.32 0 0 0 1.323-1.323v-10.318l-3.175-3.175z" fill-rule="evenodd" filter="url(#a-3)" opacity=".15" style="paint-order:stroke fill markers"/>
+ <g transform="scale(3.7796)" fill-rule="evenodd">
+  <path transform="scale(.26458)" d="m13 4c-2.77 0-5 2.23-5 5v46c0 2.77 2.23 5 5 5h38c2.77 0 5-2.23 5-5v-39l-12-12z" fill="#f1bd60" style="paint-order:stroke fill markers"/>
+  <path d="m14.816 4.233-3.175-3.175v1.852c0 0.733 0.59 1.323 1.323 1.323z" fill="#ffffff" opacity=".35" style="paint-order:stroke fill markers"/>
+ </g>
+ <g transform="scale(3.7796)" color="#000000" fill="#ffffff" opacity=".9">
+  <path d="m7.937 8.202v1.72c0 0.073 0.059 0.132 0.132 0.132h0.794a0.132 0.132 0 0 0 0.132-0.132v-1.72zm0.265 1.058h0.529v0.53h-0.531zm0.264-8.202v0.53h0.53v-0.53zm0 0.53h-0.53v0.529h0.53zm0 0.529v0.529h0.53v-0.53zm0 0.529h-0.53v0.529h0.53zm0 0.529v0.53h0.53v-0.53zm0 0.53h-0.53v0.528h0.53zm0 0.528v0.53h0.53v-0.53zm0 0.53h-0.53v0.529h0.53zm0 0.529v0.529h0.53v-0.53zm0 0.529h-0.53v0.529h0.53zm0 0.529v0.53h0.53v-0.53zm0 0.53h-0.53v0.528h0.53zm0 0.528v0.53h0.53v-0.53z"/>
+ </g>
+ <path d="m43.998 10.999v0.58584c0 3.001 2.23 5.4162 5.0004 5.4162h6.9998v-1.0016h-6.9998a4.9891 4.9891 0 0 1-5.0042-5.0004z" fill-rule="evenodd" opacity=".1" stroke-width="3.7796" style="paint-order:stroke fill markers"/>
+ <path d="m8 48v7c0 2.77 2.23 5 5 5h38c2.77 0 5-2.23 5-5v-7z" fill="#000000" fill-rule="evenodd" opacity=".15" stop-color="#000000" style="paint-order:stroke fill markers"/>
+ <g fill="#ffffff" stroke-width=".20576" aria-label="THZ">
+  <path d="m26.206 57h0.76543v-5.391h1.8272v-0.64198h-4.4198v0.64198h1.8272z"/>
+  <path d="m29.885 57h0.7572v-2.8477h2.8148v2.8477h0.76543v-6.0329h-0.76543v2.5268h-2.8148v-2.5268h-0.7572z"/>
+  <path d="m35.457 57h4.1646v-0.65021h-3.2263l3.1852-4.93v-0.45268h-3.8354v0.64198h2.8971l-3.1852 4.93z"/>
+ </g>
+</svg>

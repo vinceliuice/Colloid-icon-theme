@@ -1,0 +1,21 @@
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <filter id="a-6" x="-.033367" y="-.038929" width="1.0667" height="1.0779" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation=".206"/>
+  </filter>
+ </defs>
+ <path transform="matrix(3.7796 0 0 -3.7796 0 66.71)" d="m15.875 3.798a1.32 1.32 0 0 0-1.323-1.323h-12.17a1.32 1.32 0 0 0-1.324 1.323v10.054c0 0.733 0.59 1.323 1.323 1.323h10.32l3.173-3.175z" fill-rule="evenodd" filter="url(#a-6)" opacity=".15" style="paint-order:stroke fill markers"/>
+ <g transform="scale(3.7796)" fill-rule="evenodd">
+  <path transform="matrix(1,0,0,-1,0,16.933)" d="m15.875 3.44a1.32 1.32 0 0 0-1.323-1.323h-12.17a1.32 1.32 0 0 0-1.325 1.323v10.053c0 0.733 0.59 1.323 1.323 1.323h10.32l3.174-3.175z" fill="#5c9dff" style="paint-order:stroke fill markers"/>
+  <path transform="matrix(1,0,0,-1,0,16.933)" d="m12.7 14.816 3.175-3.175h-1.852a1.32 1.32 0 0 0-1.323 1.323z" fill="#ffffff" opacity=".35" style="paint-order:stroke fill markers"/>
+ </g>
+ <image x="11.494" y="16.778" width="40.377" height="31.786" image-rendering="optimizeQuality" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAlCAYAAADSvLDKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA0JJREFUWIXNl8mLHGUYh5+3lkw7 Ew8KJm64BMYF3MDl6Enw5IZpzfRYSacljcbMQVHiGpN/IeChmaVhDjn0X5OTeFFQgheRQWYJZrrr 52GmY29V9VXPdPU8UIeqenm/p3/98RYfFEy5JX9xTd8dRi/vMJrkYWaTRRPXFpp65qC9CpUvt+QD 3wK+3+HA6RcqX9okAp4GwFg4aPqFyZdb8gXf9Dzy/ZjvD9KzMPmZLc4CTw08PhMt69lxexYiX27J R32pd/Hl8cO4fQuRL21SBeYTXn8Yrei5cfpOXL7eUKi9CZPoIBtv8kxcfifkHHAqo+yDxaaez9t7 ovL1hkKUmvpdD2+MuT9R+e2AKvCkS62M8tllvZCnfy75alOlaEVOs7neUGiMnDCJLrGfb+7nkt+N +UTGlWpTT2TV7vjUcEz9LuL0R6t60bXcWb7aVMngKyBsi6/TausNhRiXXXv3YOCevrN8O+Yi8DAA ohYtKzHV2wEfkzf1/3nfNX0n+XpDs+yl3iWUjZ4iS9c1I8u11wcxGVdcCp3ktwM+BR7sX4JzlTUN ze+N49QQj7n0TcLEey7pZ8rXG5q1/tS7hF7cn3C5pWNorL0+iAE/ZhVlyu/4XAROJizRl35pkwvA 4+6OqbwbreqVtIJU+Whdc9jI1LuE3v4XdOm6ZkT6FMqJifSvbnrybT4DTmQsUq00Nb8xywXg0Xx+ mbyz2NSrSS8T5aN1zUl86bCA78Vcww419S5mKaetRHnd4RLwgOMiC8AjOcVceTsp/ZHy+3v9iwnJ 5MY0+rQ1Uj7eZYnsvV4c4q3Kil4bfDwkX/5Jxw0+B3SULt+G0x+SP1biksT9Ep2jcgFtwZuDez/o vYnWNadd6hi3h/66I4DFXAZOd+/75HWH82YYxt+Fm2UhiOHlSlMv3ThvN6FHvtzSPbbFGxK/o+k5 JmLIABNngH750havx+KWB7em5ZdGLDBDxMxV1nTqRs1+C2Dv5LMVc8LzuClAwqbs2oftp068/wPa zAN78tseJ72YX7uzx46Ueg8emJCFqLaqe4OrV+X94hH7MX/QmbZdNh3AD5B1CIM/H8IPQ/6ZtlQe BPgdFGzcR/zXz/w7baFx+A/djo0TMwx1VQAAAABJRU5ErkJggg=="/>
+ <circle cx="41.999" cy="26" r="6.9998" fill="#ffe680" fill-rule="evenodd" stop-color="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="paint-order:stroke fill markers"/>
+ <path d="m36.836 17.636-14.604 29.209c-0.85797 1.7197-0.85797 5.1554 2.5777 5.1554h24.053c3.4357 0 3.4357-3.4394 2.5777-5.1554z" fill="#f2f2f2" opacity=".8" stroke-width="3.7796" style="paint-order:stroke fill markers"/>
+ <path d="m20.533 28-10.2 20.4c-0.59922 1.201-0.59922 3.6005 1.8003 3.6005h16.799c2.3995 0 2.3995-2.4021 1.8003-3.6005z" fill="#f2f2f2" opacity=".5" stroke-width="2.6397" style="paint-order:stroke fill markers"/>
+ <g transform="translate(-16.819 -38.041)" fill="#ffffff" stroke-width=".20576" aria-label="GIF">
+  <path d="m28.667 53.897h2.0329v2.8807q-0.47737 0.15638-0.96296 0.23045-0.4856 0.07407-1.1029 0.07407-0.91358 0-1.5391-0.36214-0.62552-0.37037-0.95473-1.0453-0.32099-0.68313-0.32099-1.6132 0-0.92181 0.36214-1.5967 0.36214-0.6749 1.037-1.0453 0.68313-0.3786 1.6461-0.3786 0.49383 0 0.93004 0.09053 0.44444 0.09054 0.82305 0.25514l-0.27984 0.64198q-0.31276-0.13992-0.70782-0.23868-0.38683-0.09877-0.80658-0.09877-1.0535 0-1.6461 0.63374-0.58436 0.63375-0.58436 1.7366 0 0.69959 0.22222 1.2428 0.23045 0.53498 0.71605 0.83951 0.4856 0.2963 1.2757 0.2963 0.38683 0 0.65844-0.04115t0.49383-0.09877v-1.7449h-1.2922z"/>
+  <path d="m33.761 57h-2.1235v-0.42798l0.69136-0.15638v-4.6996l-0.69136-0.16461v-0.42798h2.1235v0.42798l-0.69136 0.16461v4.6996l0.69136 0.15638z"/>
+  <path d="m35.638 57h-0.74074v-5.8765h3.284v0.65021h-2.5432v2.0823h2.3868v0.65021h-2.3868z"/>
+ </g>
+</svg>

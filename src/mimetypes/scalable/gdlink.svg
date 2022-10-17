@@ -1,0 +1,16 @@
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="a" x="-.038932" y="-.033367" width="1.0779" height="1.0667" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation=".206"/>
+  </filter>
+ </defs>
+ <path transform="scale(3.7796)" d="m3.44 1.354a1.32 1.32 0 0 0-1.323 1.323v12.171c0 0.733 0.59 1.323 1.323 1.323h10.053a1.32 1.32 0 0 0 1.323-1.323v-10.318l-3.175-3.175z" filter="url(#a)" opacity=".15" style="paint-order:stroke fill markers"/>
+ <g transform="scale(3.7796)" fill-rule="evenodd">
+  <path transform="scale(.26458)" d="m13 4c-2.77 0-5 2.23-5 5v46c0 2.77 2.23 5 5 5h38c2.77 0 5-2.23 5-5v-39l-12-12z" fill="#3e86fb" style="paint-order:stroke fill markers"/>
+  <path d="m14.816 4.233-3.175-3.175v1.852c0 0.733 0.59 1.323 1.323 1.323z" fill="#ffffff" opacity=".35" style="paint-order:stroke fill markers"/>
+ </g>
+ <path d="m43.998 10.999v0.58584c0 3.001 2.23 5.4162 5.0004 5.4162h6.9998v-1.0016h-6.9998a4.9891 4.9891 0 0 1-5.0042-5.0004z" opacity=".1" stroke-width="3.7796" style="paint-order:stroke fill markers"/>
+ <polygon transform="matrix(.00022795 0 0 .00020808 17.695 25)" points="22194 115341 44385 76894 133156 76894 110963 115341" fill="#ffffff" fill-rule="evenodd"/>
+ <polygon transform="matrix(.0002253 0 0 .00023409 18.048 21)" points="88772 0 44385 0 88772 76894 133156 76894" fill="#ffffff" fill-rule="evenodd"/>
+ <path d="m26.448 22.6-9.954 16.05 4.661 9.33 9.693-16.982z" fill="#ffffff" fill-rule="evenodd"/>
+</svg>

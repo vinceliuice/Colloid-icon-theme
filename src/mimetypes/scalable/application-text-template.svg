@@ -1,0 +1,20 @@
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter6421" x="-.052" y="-.044571" width="1.104" height="1.0891" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="1.04"/>
+  </filter>
+ </defs>
+ <rect x="8" y="5" width="48" height="56" rx="5" ry="5" fill="#000000" filter="url(#filter6421)" opacity=".15" stroke-width=".98687"/>
+ <rect x="8" y="4" width="48" height="56" rx="5" ry="5" fill="#f4f4f4" stroke-width=".98687"/>
+ <g transform="translate(-8.1356,-7.0932)" fill="#000000" fill-rule="evenodd">
+  <path d="m28.136 27.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 30.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 33.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 39.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 42.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 45.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 51.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 36.093h24v1h-24z" opacity=".25"/>
+  <path d="m28.136 48.093h24v1h-24z" opacity=".25"/>
+ </g>
+</svg>

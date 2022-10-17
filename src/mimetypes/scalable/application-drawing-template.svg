@@ -1,0 +1,20 @@
+<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter6421" x="-.052" y="-.044571" width="1.104" height="1.0891" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="1.04"/>
+  </filter>
+ </defs>
+ <rect x="8" y="5" width="48" height="56" rx="5" ry="5" fill="#000000" filter="url(#filter6421)" opacity=".15" stroke-width=".98687"/>
+ <rect x="8" y="4" width="48" height="56" rx="5" ry="5" fill="#f4f4f4" stroke-width=".98687"/>
+ <g transform="matrix(3.7796,0,0,3.7796,8.3118e-4,-6.9973)" stroke-width="4">
+  <path d="m5.923 8.906 5.084 2.805" fill="none" stroke="#f34f17" stroke-width=".26456"/>
+  <path d="m6.35 14.023c3.44 1.587 5.027-2.117 2.117-3.704s-1.323-5.292 2.116-3.705" fill="#8f76e4" fill-opacity=".251" fill-rule="evenodd" stroke="#8c59d9" stroke-width=".26456"/>
+  <g transform="matrix(.06614 0 0 .06614 -1.587 0)" stroke-dashoffset="1">
+   <circle cx="108" cy="132" r="6" fill="none" stroke="#f34f17" stroke-linejoin="round"/>
+   <circle cx="196" cy="180" r="6" fill="none" stroke="#f34f17" stroke-linejoin="round"/>
+   <g fill="#ffffff" stroke="#8f76e4">
+    <path d="m178 94h12v12h-12zm-32 56h12v12h-12zm-32 56h12v12h-12z"/>
+   </g>
+  </g>
+ </g>
+</svg>
