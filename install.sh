@@ -24,7 +24,7 @@ cat << EOF
   OPTIONS:
     -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-    -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord|dracula]
+    -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord|dracula|all]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
     -h, --help              Show help
 EOF
