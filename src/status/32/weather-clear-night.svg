@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="32" height="32" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <filter id="filter859" x="-.048" y="-.048" width="1.096" height="1.096" color-interpolation-filters="sRGB">
-   <feGaussianBlur stdDeviation="0.52"/>
-  </filter>
- </defs>
- <path d="m3 17a13 13 0 0 1 13-13 13 13 0 0 1 13 13 13 13 0 0 1-13 13 13 13 0 0 1-13-13z" filter="url(#filter859)" opacity=".15" stroke-width="1.0834"/>
  <path d="m3 16a13 13 0 0 1 13-13 13 13 0 0 1 13 13 13 13 0 0 1-13 13 13 13 0 0 1-13-13z" fill="#eceff1" stroke-width="1.0834"/>
  <g fill="#d1d9dd">
   <circle cx="11.5" cy="10.5" r="1.5"/>
