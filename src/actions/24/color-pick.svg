@@ -1,0 +1,11 @@
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter911" x="-.048" y="-.048" width="1.096" height="1.096" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.40000007"/>
+  </filter>
+ </defs>
+ <path d="m2 2a1.0001 1.0001 0 0 0-1 1.0039l0.035156 9.002c0.022387 5.5077 4.5043 9.9941 9.998 9.9941 5.4924 0 9.9627-4.4876 9.9648-9.9941v-0.0039a1.0001 1.0001 0 0 0 2e-3 -2e-3c0-5.5082-4.4713-9.9969-9.9648-9.998z" color="#000000" fill="#000000" filter="url(#filter911)" opacity=".15" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+ <path d="m2 1a1.0001 1.0001 0 0 0-1 1.0039l0.035156 9.002c0.022387 5.5077 4.5043 9.9941 9.998 9.9941 5.4924 0 9.9627-4.4876 9.9648-9.9941v-0.0039a1.0001 1.0001 0 0 0 2e-3 -2e-3c0-5.5082-4.4713-9.9969-9.9648-9.998l-9.0352-0.00195z" color="#000000" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+ <path d="m19.999 11.001c0 4.9699-4.0139 8.9987-8.9652 8.9987-4.9513 0-8.978-4.0289-8.9982-8.9987l-0.035995-9.0013 9.0348 0.00212c4.9513 0.00106 8.9652 4.0289 8.9652 8.9987z" fill="#000000" style="paint-order:stroke fill markers"/>
+ <circle cx="11" cy="11" r="7" color="#000000" fill="#50dbb5" stroke-width="1.1667" style="paint-order:normal"/>
+</svg>
