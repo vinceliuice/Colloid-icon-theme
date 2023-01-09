@@ -43,44 +43,44 @@ install() {
 
   echo "Installing '${THEME_DIR}'..."
 
-  mkdir -p                                                                                 ${THEME_DIR}
-  cp -r ${SRC_DIR}/src/index.theme                                                         ${THEME_DIR}
-  sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                    ${THEME_DIR}/index.theme
+  mkdir -p                                                                                   ${THEME_DIR}
+  cp -r "${SRC_DIR}"/src/index.theme                                                         ${THEME_DIR}
+  sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                      ${THEME_DIR}/index.theme
 
   if [[ ${color} == '-light' ]]; then
-    cp -r ${SRC_DIR}/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} ${THEME_DIR}
-    cp -r ${SRC_DIR}/links/*                                                               ${THEME_DIR}
+    cp -r "${SRC_DIR}"/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} ${THEME_DIR}
+    cp -r "${SRC_DIR}"/links/*                                                               ${THEME_DIR}
 
     if [[ ${theme} != '' ]]; then
-      cp -r ${SRC_DIR}/colors/color${theme}${scheme}/*.svg                                 ${THEME_DIR}/places/scalable
+      cp -r "${SRC_DIR}"/colors/color${theme}${scheme}/*.svg                                 ${THEME_DIR}/places/scalable
     elif [[ ${scheme} != '' ]]; then
-      cp -r ${SRC_DIR}/colors/color-blue${scheme}/*.svg                                    ${THEME_DIR}/places/scalable
+      cp -r "${SRC_DIR}"/colors/color-blue${scheme}/*.svg                                    ${THEME_DIR}/places/scalable
     fi
   fi
 
   if [[ ${color} == '-dark' ]]; then
-    mkdir -p                                                                               ${THEME_DIR}/{apps,categories,devices,emblems,mimetypes,places,status}
-    cp -r ${SRC_DIR}/src/actions                                                           ${THEME_DIR}
-    cp -r ${SRC_DIR}/src/apps/symbolic                                                     ${THEME_DIR}/apps
-    cp -r ${SRC_DIR}/src/categories/symbolic                                               ${THEME_DIR}/categories
-    cp -r ${SRC_DIR}/src/emblems/symbolic                                                  ${THEME_DIR}/emblems
-    cp -r ${SRC_DIR}/src/mimetypes/symbolic                                                ${THEME_DIR}/mimetypes
-    cp -r ${SRC_DIR}/src/devices/{16,22,24,symbolic}                                       ${THEME_DIR}/devices
-    cp -r ${SRC_DIR}/src/places/{16,22,24,symbolic}                                        ${THEME_DIR}/places
-    cp -r ${SRC_DIR}/src/status/{16,22,24,symbolic}                                        ${THEME_DIR}/status
+    mkdir -p                                                                                 ${THEME_DIR}/{apps,categories,devices,emblems,mimetypes,places,status}
+    cp -r "${SRC_DIR}"/src/actions                                                           ${THEME_DIR}
+    cp -r "${SRC_DIR}"/src/apps/symbolic                                                     ${THEME_DIR}/apps
+    cp -r "${SRC_DIR}"/src/categories/symbolic                                               ${THEME_DIR}/categories
+    cp -r "${SRC_DIR}"/src/emblems/symbolic                                                  ${THEME_DIR}/emblems
+    cp -r "${SRC_DIR}"/src/mimetypes/symbolic                                                ${THEME_DIR}/mimetypes
+    cp -r "${SRC_DIR}"/src/devices/{16,22,24,symbolic}                                       ${THEME_DIR}/devices
+    cp -r "${SRC_DIR}"/src/places/{16,22,24,symbolic}                                        ${THEME_DIR}/places
+    cp -r "${SRC_DIR}"/src/status/{16,22,24,symbolic}                                        ${THEME_DIR}/status
 
     # Change icon color for dark theme
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/actions/32/*
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*
 
-    cp -r ${SRC_DIR}/links/actions/{16,22,24,32,symbolic}                                  ${THEME_DIR}/actions
-    cp -r ${SRC_DIR}/links/devices/{16,22,24,symbolic}                                     ${THEME_DIR}/devices
-    cp -r ${SRC_DIR}/links/places/{16,22,24,symbolic}                                      ${THEME_DIR}/places
-    cp -r ${SRC_DIR}/links/status/{16,22,24,symbolic}                                      ${THEME_DIR}/status
-    cp -r ${SRC_DIR}/links/apps/symbolic                                                   ${THEME_DIR}/apps
-    cp -r ${SRC_DIR}/links/categories/symbolic                                             ${THEME_DIR}/categories
-    cp -r ${SRC_DIR}/links/mimetypes/symbolic                                              ${THEME_DIR}/mimetypes
+    cp -r "${SRC_DIR}"/links/actions/{16,22,24,32,symbolic}                                  ${THEME_DIR}/actions
+    cp -r "${SRC_DIR}"/links/devices/{16,22,24,symbolic}                                     ${THEME_DIR}/devices
+    cp -r "${SRC_DIR}"/links/places/{16,22,24,symbolic}                                      ${THEME_DIR}/places
+    cp -r "${SRC_DIR}"/links/status/{16,22,24,symbolic}                                      ${THEME_DIR}/status
+    cp -r "${SRC_DIR}"/links/apps/symbolic                                                   ${THEME_DIR}/apps
+    cp -r "${SRC_DIR}"/links/categories/symbolic                                             ${THEME_DIR}/categories
+    cp -r "${SRC_DIR}"/links/mimetypes/symbolic                                              ${THEME_DIR}/mimetypes
 
     cd ${dest}
     ln -sf ../../${name}${theme}${scheme}-light/apps/scalable ${name}${theme}${scheme}-dark/apps/scalable
@@ -94,11 +94,11 @@ install() {
   fi
 
   if [[ ${color} == '' ]]; then
-    mkdir -p                                                                               ${THEME_DIR}/status
-    cp -r ${SRC_DIR}/src/status/{16,22,24}                                                 ${THEME_DIR}/status
+    mkdir -p                                                                                 ${THEME_DIR}/status
+    cp -r "${SRC_DIR}"/src/status/{16,22,24}                                                 ${THEME_DIR}/status
     # Change icon color for dark panel
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/status/{16,22,24}/*
-    cp -r ${SRC_DIR}/links/status/{16,22,24}                                               ${THEME_DIR}/status
+    cp -r "${SRC_DIR}"/links/status/{16,22,24}                                               ${THEME_DIR}/status
 
     cd ${dest}
     ln -sf ../${name}${theme}${scheme}-light/apps ${name}${theme}${scheme}/apps
