@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="64" height="64" image-rendering="optimizeSpeed" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
-  <radialGradient id="d" cx="10" cy="15" r="28.001" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#f72f3f" offset="0"/>
-   <stop stop-color="#f72f3f" stop-opacity="0" offset="1"/>
-  </radialGradient>
   <radialGradient id="c" cx="5" cy="30" r="28.001" gradientTransform="matrix(1.0714 0 0 1 -.357 0)" gradientUnits="userSpaceOnUse">
    <stop stop-color="#ff721a" offset="0"/>
    <stop stop-color="#ff721a" stop-opacity="0" offset="1"/>
@@ -19,7 +14,7 @@
  <rect x="4" y="3.969" width="56.002" height="56.002" rx="13.002" ry="13.002" fill="url(#a)"/>
  <circle cx="32.02" cy="32.044" r="30.001" fill="none"/>
  <rect x="4" y="3.969" width="56.002" height="56.002" rx="13.002" ry="13.002" fill="url(#c)"/>
- <rect x="4" y="3.969" width="56.002" height="56.002" rx="13.002" ry="13.002" fill="url(#d)"/>
+ <rect x="4" y="3.969" width="56.002" height="56.002" rx="13.002" ry="13.002" fill="#3688f2"/>
  <rect x="12" y="12" width="40" height="40" rx="6" ry="6" fill="#3e3e3e" fill-rule="evenodd" style="paint-order:stroke fill markers"/>
  <path d="M18 41.999h15v3H18z" fill="#f2f2f2"/>
  <path d="M26.727 20.909v-2.91H18v2.91h2.909v10.182h-2.91v2.91h8.728v-2.91h-2.91V20.909m9.59 13.065c-1.757-.2-2.994-1.347-4.1-2.357l1.766-1.995c.58.602 1.454 1.323 2.36 1.444.908.12 2.074.02 2.775-.574.7-.594.7-1.402.7-2.365V18h2.91l-.009 10.303c.009 2.05-.77 3.432-1.488 4.202-1.15 1.177-2.638 1.296-4.027 1.489" fill="#fff"/>
