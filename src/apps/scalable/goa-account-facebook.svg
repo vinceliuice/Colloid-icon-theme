@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32" height="32" enable-background="new" version="1.0" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <filter id="a" x="-.048" y="-.048" width="1.096" height="1.096" color-interpolation-filters="sRGB">
-   <feGaussianBlur stdDeviation=".56"/>
-  </filter>
- </defs>
- <rect x="2" y="3" width="28" height="28" rx="5" ry="5" enable-background="accumulate" filter="url(#a)" opacity=".15"/>
- <rect x="2" y="2" width="28" height="28" rx="5" ry="5" enable-background="accumulate" fill="#4075d5"/>
- <path transform="translate(-1.23 -90.615) scale(.26923)" d="M88 364s-16 0-16 16v16H60v16h12v36h16v-36h14l2-16H88v-12c0-4 4-4 4-4h12v-16z" fill="#fff" style="text-decoration-line:none;text-indent:0;text-transform:none"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" enable-background="new" version="1.0"><defs><filter id="a" width="1.096" height="1.096" x="-.048" y="-.048" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation=".56"/></filter></defs><rect width="28" height="28" x="2" y="3" enable-background="accumulate" filter="url(#a)" opacity=".15" rx="5" ry="5"/><rect width="28" height="28" x="2" y="2" fill="#4075d5" enable-background="accumulate" rx="5" ry="5"/><path fill="#fff" d="M88 364s-16 0-16 16v16H60v16h12v36h16v-36h14l2-16H88v-12c0-4 4-4 4-4h12v-16z" style="text-decoration-line:none;text-indent:0;text-transform:none" transform="translate(-1.23 -90.615) scale(.26923)"/></svg>
