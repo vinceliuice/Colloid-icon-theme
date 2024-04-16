@@ -1,5 +1,1 @@
-<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
- <path d="m4 4v1h1v-1zm1 1v1h1v-1zm1 0h1v-1h-1zm0 1v1h1v-1zm-1 0h-1v1h1zm4-2v1h1v-1zm1 1v1h1v-1zm1 0h1v-1h-1zm0 1v1h1v-1zm-1 0h-1v1h1zm-5 2v1h6v-1zm6 1v1h1v-1zm-6 0h-1v1h1z" fill="#363636"/>
- <path d="m2 1c-1.108 0-2 0.892-2 2v8c0 1.108 0.892 2 2 2h12c1.108 0 2-0.892 2-2v-8c0-1.108-0.892-2-2-2h-12zm0 1h12c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1h-12c-0.554 0-1-0.446-1-1v-8c0-0.554 0.446-1 1-1z" fill="#363636" fill-rule="evenodd" stop-color="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="paint-order:stroke fill markers"/>
- <rect x="4" y="14" width="8" height="1" rx=".5" ry=".5" fill="#363636" fill-rule="evenodd" stop-color="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="paint-order:stroke fill markers"/>
-</svg>
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.004c-.554 0-1 .446-1 1v10c0 .554.446 1 1 1h5v1s0 1-1 1v1h6v-1c-1 0-1-1-1-1v-1h5c.554 0 1-.446 1-1v-10c0-.554-.446-1-1-1zM1.5 2h13s.5 0 .5.5v9c0 .5-.5.5-.5.5h-13c-.5 0-.5-.5-.5-.5v-9s0-.5.5-.5zM4 4v1h1V4zm1 1v1h1V5zm1 0h1V4H6zm0 1v1h1V6zM5 6H4v1h1zm4-2v1h1V4zm1 1v1h1V5zm1 0h1V4h-1zm0 1v1h1V6zm-1 0H9v1h1zM5 8v1h6V8zm6 1v1h1V9zM5 9H4v1h1z" fill="#363636"/></svg>

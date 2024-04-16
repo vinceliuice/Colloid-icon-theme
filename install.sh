@@ -67,17 +67,17 @@ install() {
     cp -r "${SRC_DIR}"/src/categories/symbolic                                               ${THEME_DIR}/categories
     cp -r "${SRC_DIR}"/src/emblems/symbolic                                                  ${THEME_DIR}/emblems
     cp -r "${SRC_DIR}"/src/mimetypes/symbolic                                                ${THEME_DIR}/mimetypes
-    cp -r "${SRC_DIR}"/src/devices/{16,22,24,symbolic}                                       ${THEME_DIR}/devices
+    cp -r "${SRC_DIR}"/src/devices/{16,22,24,32,symbolic}                                    ${THEME_DIR}/devices
     cp -r "${SRC_DIR}"/src/places/{16,22,24,symbolic}                                        ${THEME_DIR}/places
     cp -r "${SRC_DIR}"/src/status/{16,22,24,symbolic}                                        ${THEME_DIR}/status
 
     # Change icon color for dark theme
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/actions/32/*
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices}/32/*
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*
 
     cp -r "${SRC_DIR}"/links/actions/{16,22,24,32,symbolic}                                  ${THEME_DIR}/actions
-    cp -r "${SRC_DIR}"/links/devices/{16,22,24,symbolic}                                     ${THEME_DIR}/devices
+    cp -r "${SRC_DIR}"/links/devices/{16,22,24,32,symbolic}                                  ${THEME_DIR}/devices
     cp -r "${SRC_DIR}"/links/places/{16,22,24,symbolic}                                      ${THEME_DIR}/places
     cp -r "${SRC_DIR}"/links/status/{16,22,24,symbolic}                                      ${THEME_DIR}/status
     cp -r "${SRC_DIR}"/links/apps/symbolic                                                   ${THEME_DIR}/apps
