@@ -28,6 +28,7 @@ cat << EOF
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
     -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord|dracula|all]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+    -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
     -h, --help              Show help
 EOF
 }
@@ -41,7 +42,7 @@ install() {
 
   local THEME_DIR=${1}/${2}${3}${4}${5}
 
-  [[ -d ${THEME_DIR} ]] && rm -rf ${THEME_DIR}
+  [[ -d "${THEME_DIR}" ]] && rm -rf "${THEME_DIR}"
 
   echo "Installing '${THEME_DIR}'..."
 
@@ -49,18 +50,22 @@ install() {
   cp -r "${SRC_DIR}"/src/index.theme                                                         ${THEME_DIR}
   sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                      ${THEME_DIR}/index.theme
 
-  if [[ ${color} == '-light' ]]; then
+  if [[ "${color}" == '-light' ]]; then
     cp -r "${SRC_DIR}"/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} ${THEME_DIR}
     cp -r "${SRC_DIR}"/links/*                                                               ${THEME_DIR}
 
-    if [[ ${theme} != '' ]]; then
+    if [[ "${theme}" != '' ]]; then
       cp -r "${SRC_DIR}"/colors/color${theme}${scheme}/*.svg                                 ${THEME_DIR}/places/scalable
     elif [[ ${scheme} != '' ]]; then
       cp -r "${SRC_DIR}"/colors/color-blue${scheme}/*.svg                                    ${THEME_DIR}/places/scalable
     fi
+
+    if [[ "${theme}" == '' && "${scheme}" == '' && "${notint}" == 'true' ]]; then
+      cp -r "${SRC_DIR}"/notint/*.svg                                                        ${THEME_DIR}/places/scalable
+    fi
   fi
 
-  if [[ ${color} == '-dark' ]]; then
+  if [[ "${color}" == '-dark' ]]; then
     mkdir -p                                                                                 ${THEME_DIR}/{apps,categories,devices,emblems,mimetypes,places,status}
     cp -r "${SRC_DIR}"/src/actions                                                           ${THEME_DIR}
     cp -r "${SRC_DIR}"/src/apps/symbolic                                                     ${THEME_DIR}/apps
@@ -95,7 +100,7 @@ install() {
     ln -sf ../../${name}${theme}${scheme}-light/mimetypes/scalable ${name}${theme}${scheme}-dark/mimetypes/scalable
   fi
 
-  if [[ ${color} == '' ]]; then
+  if [[ "${color}" == '' ]]; then
     mkdir -p                                                                                 ${THEME_DIR}/status
     cp -r "${SRC_DIR}"/src/status/{16,22,24}                                                 ${THEME_DIR}/status
     # Change icon color for dark panel
@@ -139,6 +144,10 @@ while [[ "$#" -gt 0 ]]; do
     -n|--name)
       name="${2}"
       shift 2
+      ;;
+    -notint|--notint)
+      notint='true'
+      shift
       ;;
     -s|--scheme)
       shift

@@ -17,6 +17,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -n, --name NAME         Specify theme name (Default: Colloid)
 -s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord|dracula|all]
 -t, --theme VARIANTS    Specify folder color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+-notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
 -h, --help              Show help
 ```
 > For example: install teal nord version -> run: `./install.sh -s nord -t teal`
