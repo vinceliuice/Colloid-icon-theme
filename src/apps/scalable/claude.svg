@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   t="1715684124514"
+   class="icon"
+   viewBox="0 0 327.67999 327.67998"
+   version="1.1"
+   p-id="1491"
+   width="64"
+   height="64"
+   id="svg2"
+   sodipodi:docname="Claude.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="b"
+       x1="8.3640003"
+       x2="8.3640003"
+       y1="2.3699999"
+       y2="14.902"
+       gradientTransform="matrix(19.351562,0,0,19.351562,185.83813,-9.7146061)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#20ef85"
+         id="stop7" />
+      <stop
+         offset="1"
+         stop-color="#12a97e"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="b-3"
+       x1="8.3640003"
+       x2="8.3640003"
+       y1="2.3699999"
+       y2="14.902"
+       gradientTransform="matrix(19.351561,0,0,19.351561,648.41276,0.15480967)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#20ef85"
+         id="stop7-6" />
+      <stop
+         offset="1"
+         stop-color="#12a97e"
+         id="stop8-7" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3">
+      <rect
+         width="286.73209"
+         height="286.73209"
+         x="20.473949"
+         y="20.473949"
+         fill="url(#b)"
+         rx="66.569374"
+         ry="66.569374"
+         id="rect3"
+         style="fill:url(#linearGradient3);stroke-width:19.3516" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#b-3"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(19.351561,0,0,19.351561,648.41274,0.1548097)"
+       x1="8.3640003"
+       y1="2.3699999"
+       x2="8.3640003"
+       y2="14.902" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.1617005"
+     inkscape:cx="21.293825"
+     inkscape:cy="48.033285"
+     inkscape:window-width="1920"
+     inkscape:window-height="1120"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     d="M 0,0 H 327.68 V 327.68 H 0 Z"
+     fill="#d19b75"
+     p-id="1492"
+     id="path1"
+     style="stroke-width:0.32"
+     clip-path="url(#clipPath3)" />
+  <path
+     d="m 97.222588,237.56795 h -31.24429 a 0.442368,0.442368 0 0 1 -0.36864,-0.2048 0.466944,0.466944 0 0 1 -0.041,-0.42598 L 122.56859,90.39048 a 0.442368,0.442368 0 0 1 0.4178,-0.27853 h 32.63692 c 0.18023,0 0.34407,0.1065 0.4096,0.27853 l 56.92621,146.55488 a 0.466944,0.466944 0 0 1 -0.041,0.41779 0.442368,0.442368 0 0 1 -0.36864,0.2048 h -31.17875 a 0.442368,0.442368 0 0 1 -0.4096,-0.29491 l -11.47695,-30.24487 a 0.442368,0.442368 0 0 0 -0.4096,-0.29491 H 109.4532 a 0.442368,0.442368 0 0 0 -0.4096,0.29491 l -11.419642,30.24487 a 0.442368,0.442368 0 0 1 -0.4096,0.29491 z M 122.9127,179.63413 a 0.4096,0.4096 0 0 0 0.0492,0.4096 c 0.0901,0.11468 0.23757,0.18022 0.38502,0.18022 h 40.02612 a 0.475136,0.475136 0 0 0 0.38502,-0.18842 0.4096,0.4096 0 0 0 0.0491,-0.4096 L 143.8023,131.35867 a 0.466944,0.466944 0 0 0 -0.44237,-0.28672 0.466944,0.466944 0 0 0 -0.44237,0.28672 z m 51.24915,-89.52218 h 30.49882 a 0.49152,0.49152 0 0 1 0.46694,0.32768 l 56.98355,146.432 c 0.0574,0.15565 0.041,0.32768 -0.0491,0.47514 a 0.49152,0.49152 0 0 1 -0.4096,0.22118 h -30.48243 a 0.49152,0.49152 0 0 1 -0.47514,-0.32768 l -56.99174,-146.432 a 0.516096,0.516096 0 0 1 0.0491,-0.47514 0.49152,0.49152 0 0 1 0.4096,-0.22118 z"
+     fill="#1f1f1e"
+     p-id="1493"
+     id="path2"
+     style="stroke-width:0.32" />
+</svg>
