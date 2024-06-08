@@ -2,7 +2,7 @@
  <defs>
   <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#363636; }</style>
  </defs>
- <g transform="translate(4,4)" fill="#363636">
+ <g transform="translate(4,4)" style="fill:currentColor" class="ColorScheme-Text">
   <path d="m8 1a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7zm0 1a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6z" opacity=".45"/>
   <path d="M 7.9746,3 A 4.9749,4.9749 0 0 0 3,7.9746 4.9749,4.9749 0 0 0 7.9746,12.9492 4.9749,4.9749 0 0 0 12.8301,9 H 10.7656 A 2.9749,2.9749 0 0 1 7.9746,10.9492 2.9749,2.9749 0 0 1 5,7.9746 2.9749,2.9749 0 0 1 7.9746,5 2.9749,2.9749 0 0 1 10.7812,7 h 2.0586 A 4.9749,4.9749 0 0 0 7.9746,3 Z"/>
   <circle cx="8" cy="8" r="2" opacity=".45"/>

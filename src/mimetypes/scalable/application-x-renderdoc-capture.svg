@@ -1,0 +1,14 @@
+<svg width="64" height="64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="a" x="-.038932" y="-.033367" width="1.0779" height="1.0667" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation=".206"/>
+  </filter>
+ </defs>
+ <g transform="scale(3.7796)" fill-rule="evenodd">
+  <path d="m3.44 1.354a1.32 1.32 0 0 0-1.323 1.323v12.171c0 0.733 0.59 1.323 1.323 1.323h10.053a1.32 1.32 0 0 0 1.323-1.323v-10.318l-3.175-3.175z" filter="url(#a)" opacity=".15" style="paint-order:stroke fill markers"/>
+  <path d="m3.44 1.059a1.32 1.32 0 0 0-1.323 1.323v12.17c0 0.734 0.59 1.324 1.323 1.324h10.053a1.32 1.32 0 0 0 1.323-1.323v-10.32l-3.175-3.173z" fill="#84c835" style="paint-order:stroke fill markers"/>
+  <path d="m14.816 4.233-3.175-3.175v1.852c0 0.733 0.59 1.323 1.323 1.323z" fill="#ffffff" opacity=".35" style="paint-order:stroke fill markers"/>
+ </g>
+ <path d="m43.998 10.999v0.58584c0 3.001 2.23 5.4162 5.0004 5.4162h6.9998v-1.0016h-6.9998a4.9891 4.9891 0 0 1-5.0042-5.0004z" fill-rule="evenodd" opacity=".1" stroke-width="3.7796" style="paint-order:stroke fill markers"/>
+ <path d="m31.927 32.51a4.7478 4.7478 0 1 1 0 9.4957 4.7478 4.7478 0 0 1 0-9.4957m5.9861 10.497a8.2692 8.2692 0 0 0 2.3165-5.7496c0-4.5843-3.7169-8.3019-8.3019-8.3019-4.5843 0-8.3019 3.7169-8.3019 8.3019 0 2.247 0.84452 4.2344 2.2957 5.7294-4.3562 1.1054-7.8797 3.4219-9.9214 6.3228 4.3534-2.1523 9.9256-3.4456 16-3.4456s11.647 1.2932 16 3.4456c-2.0598-2.9273-5.6786-5.2077-10.088-6.3012" fill="#ffffff" stroke-width=".69565"/>
+</svg>
