@@ -15,7 +15,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 ```
 -d, --dest DIR          Specify destination directory (Default: $HOME/.local/share/icons)
 -n, --name NAME         Specify theme name (Default: Colloid)
--s, --scheme TYPES      Specify folder color scheme variant(s) [default|nord|dracula|all]
+-s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|gruvbox|everforest|catppuccin|all]
 -t, --theme VARIANTS    Specify folder color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
 -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
 -h, --help              Show help
@@ -24,6 +24,6 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 
 > For more information, run: `./install.sh -h`
 
-![1](folder-default.png?raw=true)
-![2](folder-nord.png?raw=true)
-![3](folder-dracula.png?raw=true)
+![folders](folders.png?raw=true)
+
+![schemes](schemes.png?raw=true)
