@@ -286,7 +286,7 @@ clean_old_theme() {
   for theme in '' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-teal' '-grey'; do
     for scheme in '' '-nord' '-dracula'; do
       for color in '' '-light' '-dark'; do
-        rm -rf "${DEST_DIR}/${THEME_NAME}${theme}${scheme}${color}"
+        rm -rf "${dest:-${DEST_DIR}}/${THEME_NAME}${theme}${scheme}${color}"
       done
     done
   done
