@@ -22,6 +22,7 @@ PanelSizes=16,22,32,48,64,96,128,256
 DialogDefault=32
 DialogSizes=16,22,32,48,64,128,256
 FollowsColorScheme=true
+Inherits=hicolor,breeze
 
 KDE-Extensions=.svg
 
@@ -428,4 +429,3 @@ Context=Status
 MinSize=16
 MaxSize=512
 Type=Scalable
-
