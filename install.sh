@@ -105,12 +105,6 @@ install() {
   fi
 
   if [[ "${color}" == '' ]]; then
-    mkdir -p                                                                                "${THEME_DIR}"/status
-    cp -r "${SRC_DIR}"/src/status/{16,22,24}                                                "${THEME_DIR}"/status
-    # Change icon color for dark panel
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/status/{16,22,24}/*
-    cp -r "${SRC_DIR}"/links/status/{16,22,24}                                              "${THEME_DIR}"/status
-
     cd ${dest}
     ln -sf ../"${name}${theme}${scheme}"-Light/apps "${name}${theme}${scheme}"/apps
     ln -sf ../"${name}${theme}${scheme}"-Light/actions "${name}${theme}${scheme}"/actions
@@ -119,8 +113,7 @@ install() {
     ln -sf ../"${name}${theme}${scheme}"-Light/places "${name}${theme}${scheme}"/places
     ln -sf ../"${name}${theme}${scheme}"-Light/categories "${name}${theme}${scheme}"/categories
     ln -sf ../"${name}${theme}${scheme}"-Light/mimetypes "${name}${theme}${scheme}"/mimetypes
-    ln -sf ../../"${name}${theme}${scheme}"-Light/status/32 "${name}${theme}${scheme}"/status/32
-    ln -sf ../../"${name}${theme}${scheme}"-Light/status/symbolic "${name}${theme}${scheme}"/status/symbolic
+    ln -sf ../"${name}${theme}${scheme}"-Dark/status "${name}${theme}${scheme}"/status
   fi
 
   (
