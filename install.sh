@@ -17,7 +17,7 @@ SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 source "${SRC_DIR}/lib_colors.sh"
 
 THEME_NAME=Colloid
-COLOR_VARIANTS=('' '-Light' '-Dark')
+COLOR_VARIANTS=('-Light' '-Dark' '')
 THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
 SCHEME_VARIANTS=('' '-Nord' '-Dracula' '-Gruvbox' '-Everforest' '-Catppuccin')
 
@@ -31,6 +31,7 @@ cat << EOF
     -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|gruvbox|everforest|catppuccin|all]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
     -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
+    -r, --remove, -u, --uninstall   Remove/Uninstall $THEME_NAME icon themes
     -h, --help              Show help
 EOF
 }
@@ -72,7 +73,7 @@ install() {
   if [[ "${color}" == '-Dark' ]]; then
     mkdir -p                                                                                "${THEME_DIR}"/{apps,categories,devices,emblems,mimetypes,places,status}
     cp -r "${SRC_DIR}"/src/actions                                                          "${THEME_DIR}"
-    cp -r "${SRC_DIR}"/src/apps/symbolic                                                    "${THEME_DIR}"/apps
+    cp -r "${SRC_DIR}"/src/apps/{22,symbolic}                                               "${THEME_DIR}"/apps
     cp -r "${SRC_DIR}"/src/categories/symbolic                                              "${THEME_DIR}"/categories
     cp -r "${SRC_DIR}"/src/emblems/symbolic                                                 "${THEME_DIR}"/emblems
     cp -r "${SRC_DIR}"/src/mimetypes/symbolic                                               "${THEME_DIR}"/mimetypes
@@ -81,15 +82,16 @@ install() {
     cp -r "${SRC_DIR}"/src/status/{16,22,24,symbolic}                                       "${THEME_DIR}"/status
 
     # Change icon color for dark theme
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices}/32/*
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*.svg
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices}/32/*.svg
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/apps/22/*.svg
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*.svg
 
     cp -r "${SRC_DIR}"/links/actions/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/actions
     cp -r "${SRC_DIR}"/links/devices/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/devices
     cp -r "${SRC_DIR}"/links/places/{16,22,24,symbolic}                                     "${THEME_DIR}"/places
     cp -r "${SRC_DIR}"/links/status/{16,22,24,symbolic}                                     "${THEME_DIR}"/status
-    cp -r "${SRC_DIR}"/links/apps/symbolic                                                  "${THEME_DIR}"/apps
+    cp -r "${SRC_DIR}"/links/apps/{22,symbolic}                                             "${THEME_DIR}"/apps
     cp -r "${SRC_DIR}"/links/categories/symbolic                                            "${THEME_DIR}"/categories
     cp -r "${SRC_DIR}"/links/mimetypes/symbolic                                             "${THEME_DIR}"/mimetypes
 
@@ -141,6 +143,11 @@ while [[ "$#" -gt 0 ]]; do
     -n|--name)
       name="${2}"
       shift 2
+      ;;
+    -r|--remove|-u|--uninstall)
+      remove='true'
+      echo -e "\nUninstall icon themes...\n"
+      shift
       ;;
     -notint|--notint)
       notint='true'
@@ -285,6 +292,17 @@ clean_old_theme() {
   done
 }
 
+remove_theme() {
+  for theme in "${THEME_VARIANTS[@]}"; do
+    for scheme in "${SCHEME_VARIANTS[@]}"; do
+      for color in "${COLOR_VARIANTS[@]}"; do
+        local THEME_DIR="${DEST_DIR}/${THEME_NAME}${theme}${scheme}${color}"
+        [[ -d "$THEME_DIR" ]] && echo -e "Removing $THEME_DIR ..." && rm -rf "$THEME_DIR"
+      done
+    done
+  done
+}
+
 install_theme() {
   for theme in "${themes[@]}"; do
     for scheme in "${schemes[@]}"; do
@@ -295,4 +313,14 @@ install_theme() {
   done
 }
 
-clean_old_theme && install_theme
+clean_old_theme
+
+if [[ "${remove}" == 'true' ]]; then
+  remove_theme
+else
+  install_theme
+fi
+
+echo -e "\nFinished!\n"
+
+
