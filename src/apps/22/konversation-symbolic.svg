@@ -1,0 +1,18 @@
+<svg width="22" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
+        color:#363636;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Accent {
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#363636;
+      }</style>
+ <g id="konversation" transform="translate(-326 -534.36)">
+  <path class="ColorScheme-Text" d="m344 538.36-12 3.418v6.1641l1 0.28516v2.4336l6 1.6992v-2.4238l5 1.4238v-11.957zm-1 1.3281v10.344l-10-2.8477v-4.6484zm-12 2.375-1 0.28515v5.0234l1 0.28516v-5.2969zm3 6.4492 4 1.1387v1.4258l-4-1.1328z" fill="currentColor"/>
+  <rect x="326" y="534.36" width="22" height="22" fill="none"/>
+ </g>
+</svg>
