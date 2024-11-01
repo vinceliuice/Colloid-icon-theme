@@ -64,7 +64,7 @@ install() {
 
     colors_folder
 
-    if [[ "${scheme}" != '' ]]; then
+    if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
       cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
       sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
       sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
