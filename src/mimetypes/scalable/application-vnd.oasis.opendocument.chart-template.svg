@@ -1,12 +1,1 @@
-<svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <filter id="filter6421" x="-.052" y="-.044571" width="1.104" height="1.0891" color-interpolation-filters="sRGB">
-   <feGaussianBlur stdDeviation="1.04"/>
-  </filter>
- </defs>
- <rect x="8" y="5" width="48" height="56" rx="5" ry="5" fill="#000000" filter="url(#filter6421)" opacity=".15" stroke-width=".98687"/>
- <rect x="8" y="4" width="48" height="56" rx="5" ry="5" fill="#f4f4f4" stroke-width=".98687"/>
- <path d="m19 21h6v32h-6z" color="#bebebe" fill="#68b723" opacity=".75" overflow="visible"/>
- <path d="m29 37h6v16h-6z" fill="#c6262e" opacity=".75" overflow="visible"/>
- <path d="m39 29h6v24h-6z" color="#bebebe" fill="#3689e6" opacity=".75" overflow="visible"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><filter id="a" width="1.104" height="1.089" x="-.052" y="-.045" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="1.04"/></filter></defs><rect width="48" height="56" x="8" y="5" filter="url(#a)" opacity=".15" rx="5" ry="5"/><rect width="48" height="56" x="8" y="4" fill="#f4f4f4" rx="5" ry="5"/><path fill="#68b723" d="M19 21h6v32h-6z" color="#bebebe" opacity=".75" overflow="visible"/><path fill="#c6262e" d="M29 37h6v16h-6z" opacity=".75" overflow="visible"/><path fill="#3689e6" d="M39 29h6v24h-6z" color="#bebebe" opacity=".75" overflow="visible"/></svg>
