@@ -25,8 +25,8 @@ FollowsColorScheme=true
 KDE-Extensions=.svg
 
 # Directory list
-Directories=actions/16,actions/22,actions/24,actions/32,actions/symbolic,apps/22,apps/scalable,apps/symbolic,categories/32,categories/symbolic,emblems/16,emblems/22,emblems/symbolic,places/symbolic,places/scalable,places/16,places/22,places/24,mimetypes/scalable,mimetypes/symbolic,devices/scalable,devices/symbolic,devices/16,devices/22,devices/24,devices/32,status/16,status/22,status/24,status/32,status/symbolic
-ScaledDirectories=actions@2x/16,actions@2x/22,actions@2x/24,actions@2x/32,actions@2x/symbolic,apps@2x/22,apps@2x/scalable,apps@2x/symbolic,categories@2x/32,categories@2x/symbolic,emblems@2x/16,emblems@2x/22,emblems@2x/symbolic,places@2x/symbolic,places@2x/scalable,places@2x/16,places@2x/22,places@2x/24,mimetypes@2x/scalable,mimetypes@2x/symbolic,devices@2x/scalable,devices@2x/symbolic,devices@2x/16,devices@2x/22,devices@2x/24,devices@2x/32,status@2x/16,status@2x/22,status@2x/24,status@2x/32,status@2x/symbolic
+Directories=actions/16,actions/22,actions/24,actions/32,actions/symbolic,apps/22,apps/scalable,apps/symbolic,categories/22,categories/32,categories/symbolic,emblems/16,emblems/22,emblems/symbolic,places/symbolic,places/scalable,places/16,places/22,places/24,mimetypes/scalable,mimetypes/symbolic,devices/scalable,devices/symbolic,devices/16,devices/22,devices/24,devices/32,status/16,status/22,status/24,status/32,status/symbolic
+ScaledDirectories=actions@2x/16,actions@2x/22,actions@2x/24,actions@2x/32,actions@2x/symbolic,apps@2x/22,apps@2x/scalable,apps@2x/symbolic,categories@2x/22,categories@2x/32,categories@2x/symbolic,emblems@2x/16,emblems@2x/22,emblems@2x/symbolic,places@2x/symbolic,places@2x/scalable,places@2x/16,places@2x/22,places@2x/24,mimetypes@2x/scalable,mimetypes@2x/symbolic,devices@2x/scalable,devices@2x/symbolic,devices@2x/16,devices@2x/22,devices@2x/24,devices@2x/32,status@2x/16,status@2x/22,status@2x/24,status@2x/32,status@2x/symbolic
 
 [actions/16]
 Size=16
@@ -75,6 +75,11 @@ Context=Applications
 MinSize=16
 MaxSize=512
 Type=Scalable
+
+[categories/22]
+Size=22
+Context=Categories
+Type=Fixed
 
 [categories/32]
 Size=32
@@ -274,6 +279,12 @@ Context=Applications
 MinSize=16
 MaxSize=512
 Type=Scalable
+
+[categories/22]
+Size=22
+Scale=2
+Context=Categories
+Type=Fixed
 
 [categories@2x/32]
 Size=32
