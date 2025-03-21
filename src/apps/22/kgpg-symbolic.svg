@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="22" height="22">
-    <style type="text/css" id="current-color-scheme">
-      .ColorScheme-Text {
+<svg version="1.1" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
         color:#363636;
-      }
-      </style>
-    <g id="kgpg">
-    <path id="path1" d="M 11,3 C 8.784,3 7,4.784 7,7 l 0,3 -2,0 0,2 0,7 1,0 10,0 1,0 0,-9 -1,0 -1,0 0,-3 C 15,4.784 13.216,3 11,3 Z m 0,1 c 1.662,0 3,1.561 3,3.5 L 14,10 8,10 8,7.5 C 8,5.561 9.338,4 11,4 Z m -5,7 10,0 0,7 -10,0 z" style="fill:currentColor;fill-opacity:1;stroke:none" class="ColorScheme-Text"/>
-    <rect y="0" x="0" height="22" width="22" id="rect1" style="fill:none;stroke:none"/>
-  </g>
+      }</style>
+ </defs>
+ <path d="m11 4c-2.216 0-4 1.784-4 4v2c-1.108 0-2 0.892-2 2v5c0 1.108 0.892 2 2 2h8c1.108 0 2-0.892 2-2v-5c0-1.108-0.892-2-2-2v-2c0-2.216-1.784-4-4-4zm0 1c1.662 0 3 1.338 3 3v2h-6v-2c0-1.662 1.338-3 3-3zm-4 6h8c0.554 0 1 0.446 1 1v5c0 0.554-0.446 1-1 1h-8c-0.554 0-1-0.446-1-1v-5c0-0.554 0.446-1 1-1z" class="ColorScheme-Text" fill="currentColor"/>
 </svg>
