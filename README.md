@@ -1,5 +1,5 @@
 ## Uniformity
-This is a fork of the Colloid-icon-theme. I am chaning app icons and adding new ones as I go on using linux. This is mostly a personal projecr but you may add pull requests and I shall review them as and when I can.
+This is a fork of the Colloid-icon-theme. I am chaning app icons and adding new ones as I go on using linux. This is mostly a personal project but you may add pull requests and I shall review them as and when I can.
 
 ![1](preview.png?raw=true)
 
