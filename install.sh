@@ -14,7 +14,7 @@ fi
 
 SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-THEME_NAME=Colloid
+THEME_NAME=Uniformity
 THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
 SCHEME_VARIANTS=('' '-Nord' '-Dracula' '-Gruvbox' '-Everforest' '-Catppuccin')
 COLOR_VARIANTS=('-Light' '-Dark' '')
@@ -53,7 +53,7 @@ install() {
 
   mkdir -p                                                                                  "${THEME_DIR}"
   cp -r "${SRC_DIR}"/src/index.theme                                                        "${THEME_DIR}"
-  sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                     "${THEME_DIR}"/index.theme
+  sed -i "s/Uniformity/${2}${3}${4}${5}/g"                                                     "${THEME_DIR}"/index.theme
 
   if [[ "${color}" == '-Light' ]]; then
     cp -r "${SRC_DIR}"/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} "${THEME_DIR}"
