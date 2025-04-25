@@ -2,6 +2,8 @@
 
 **Crunched Icon Theme** is a fork of [Colloid icon theme](https://github.com/vinceliuice/Colloid-icon-theme), with obvious Apple branded and themed icons removed or replaced to create a more generic and universally appealing look.
 
+More info on the [changes here](changes.md)
+
 ![1](preview.png?raw=true)
 
 ## Donate
