@@ -8,7 +8,7 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### Added
 
-- Zen Browser. `/src/~/scalable/zen-browser.svg`
+- Zen Browser. `/src/~/scalable/zen-browser.svg` / `/links/~/scalable/app.zen_browser.zen.svg`
 - GDLauncher. `/src/~/scalable/gd-launcher.svg` / `/links/~/scalable/io.gdevs.GDLauncher.svg`
 - Sober (Roblox Player). `/src/~/scalable/sober.svg` / `/links/~/scalable/org.vinegarhq.Sober.svg`
 - Lunar Client. `/src/~/scalable/lunarclient.svg` / `/links/~/scalable/com.lunarclient.LunarClient.svg`
