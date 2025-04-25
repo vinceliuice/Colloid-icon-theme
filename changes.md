@@ -9,6 +9,7 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 #### Added
 
 - `scalable/zen-browser.svg`
+- `scalable/gd-launcher.svg`
 
 #### Updated
 
@@ -18,7 +19,6 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### To add.
 
-- GD Luancher
 - HTTPie
 - Lunar Client
 - PenPot
