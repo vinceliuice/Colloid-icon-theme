@@ -13,6 +13,7 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 - Sober (Roblox Player). `/src/~/scalable/sober.svg` / `/links/~/scalable/org.vinegarhq.Sober.svg`
 - Lunar Client. `/src/~/scalable/lunarclient.svg` / `/links/~/scalable/com.lunarclient.LunarClient.svg`
 - HTTPie. `/src/~/scalable/httpie.svg` / `/links/~/scalable/io.httpie.Httpie.svg`
+- Penpot. `/src/~/scalable/penpot-desktop.svg` / `/links/~/scalable/com.authormore.penpotdesktop.svg`
 
 #### Updated
 
@@ -22,7 +23,7 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### To add.
 
-- PenPoth
+-
 
 #### To update.
 
