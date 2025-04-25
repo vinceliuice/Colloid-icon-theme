@@ -8,8 +8,9 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### Added
 
-- `scalable/zen-browser.svg`
-- `scalable/gd-launcher.svg`
+- Zen Browser. `scalable/zen-browser.svg`
+- GDLauncher. `scalable/gd-launcher.svg`
+- Sober (Roblox Player). `scalable/sober.svg` / `links/apps/scalable/org.vinegarhq.Sober.svg`
 
 #### Updated
 
@@ -22,7 +23,6 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 - HTTPie
 - Lunar Client
 - PenPot
-- Sober (Roblox Player)
 
 #### To update.
 
