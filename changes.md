@@ -23,7 +23,8 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### To add.
 
--
+- Ghostty.
+- Spotube.
 
 #### To update.
 

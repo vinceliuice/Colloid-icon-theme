@@ -53,7 +53,7 @@ install() {
 
   mkdir -p                                                                                  "${THEME_DIR}"
   cp -r "${SRC_DIR}"/src/index.theme                                                        "${THEME_DIR}"
-  sed -i "s/Colloid/${2}${3}${4}${5}/g"                                                     "${THEME_DIR}"/index.theme
+  sed -i "s/Crunched/${2}${3}${4}${5}/g"                                                    "${THEME_DIR}"/index.theme
 
   if [[ "${color}" == '-Light' ]]; then
     cp -r "${SRC_DIR}"/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} "${THEME_DIR}"

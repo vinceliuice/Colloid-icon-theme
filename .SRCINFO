@@ -1,0 +1,11 @@
+pkgbase = crunched-icon-pack-git
+	pkgdesc = Crunched Icon Theme for linux desktops (an Apple removed/crunched version of Colloid Icon Theme)
+	pkgver = 1.0.r323
+	pkgrel = 1
+	url = https://github.com/lieonlion/crunched_icon_theme.git
+	arch = any
+	license = GPL
+	source = git+https://github.com/lieonlion/crunched_icon_theme.git
+	md5sums = SKIP
+
+pkgname = crunched-icon-pack-git
