@@ -1,6 +1,6 @@
 [Icon Theme]
-Name=Colloid
-Comment=Flat clean style icon theme for linux.
+Name=Crunched
+Comment=An Apple removed/crunched version of Colloid Icon Theme
 Inherits=hicolor,breeze
 Example=folder
 
