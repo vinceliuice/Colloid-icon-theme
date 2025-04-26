@@ -17,7 +17,7 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### Updated
 
--
+- Settings Application. `/src/~/scalable/applications-system.svg` / `/src/~/scalable/preferences-system.svg`
 
 ### Planned
 
@@ -27,8 +27,6 @@ Here you can find all the icons I plan to edit/add to the theme to remove the Ap
 
 #### To update.
 
-- `/src/~/scalable/applications-system.svg`
-- `/src/~/scalable/preferences-system.svg`
 - `/src/~/scalable/input-mouse.svg`
 - `/src/~/scalable/preferences-desktop-icons.svg`
 - `/src/~/scalable/softwarecenter.svg`
