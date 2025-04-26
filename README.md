@@ -14,6 +14,12 @@ You can donate to the original creator here, and buy them a coffee:
 
 ## Install tips
 
+```bash
+git clone https://github.com/lieonlion/crunched_icon_theme.git
+cd ./crunched_icon_theme
+./install.sh
+```
+
 Usage: `./install.sh` **[OPTIONS...]**
 
 ```
