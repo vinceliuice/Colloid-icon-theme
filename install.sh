@@ -82,13 +82,13 @@ install() {
     cp -r "${SRC_DIR}"/src/mimetypes/symbolic                                               "${THEME_DIR}"/mimetypes
     cp -r "${SRC_DIR}"/src/devices/{16,22,24,32,symbolic}                                   "${THEME_DIR}"/devices
     cp -r "${SRC_DIR}"/src/places/{16,22,24,scalable,symbolic}                              "${THEME_DIR}"/places
-    cp -r "${SRC_DIR}"/src/status/{16,22,24,symbolic}                                       "${THEME_DIR}"/status
+    cp -r "${SRC_DIR}"/src/status/{16,22,24,32,symbolic}                                    "${THEME_DIR}"/status
 
     cp -r "${SRC_DIR}"/dark/*.svg                                                           "${THEME_DIR}"/places/scalable
 
     # Change icon color for dark theme
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*.svg
-    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices}/32/*.svg
+    sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,status}/32/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/apps/22/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/categories/22/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*.svg
@@ -107,7 +107,6 @@ install() {
     ln -sf ../../"${name}${theme}${scheme}"-Light/categories/32 "${name}${theme}${scheme}"-Dark/categories/32
     ln -sf ../../"${name}${theme}${scheme}"-Light/emblems/16 "${name}${theme}${scheme}"-Dark/emblems/16
     ln -sf ../../"${name}${theme}${scheme}"-Light/emblems/22 "${name}${theme}${scheme}"-Dark/emblems/22
-    ln -sf ../../"${name}${theme}${scheme}"-Light/status/32 "${name}${theme}${scheme}"-Dark/status/32
     ln -sf ../../"${name}${theme}${scheme}"-Light/mimetypes/scalable "${name}${theme}${scheme}"-Dark/mimetypes/scalable
   fi
 
