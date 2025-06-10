@@ -280,7 +280,7 @@ MinSize=16
 MaxSize=512
 Type=Scalable
 
-[categories/22]
+[categories@2x/22]
 Size=22
 Scale=2
 Context=Categories
