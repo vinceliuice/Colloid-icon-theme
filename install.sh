@@ -97,7 +97,7 @@ install() {
     cp -r "${SRC_DIR}"/links/actions/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/actions
     cp -r "${SRC_DIR}"/links/devices/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/devices
     cp -r "${SRC_DIR}"/links/places/{16,22,24,scalable,symbolic}                            "${THEME_DIR}"/places
-    cp -r "${SRC_DIR}"/links/status/{16,22,24,symbolic}                                     "${THEME_DIR}"/status
+    cp -r "${SRC_DIR}"/links/status/{16,22,24,32,symbolic}                                  "${THEME_DIR}"/status
     cp -r "${SRC_DIR}"/links/apps/{22,symbolic}                                             "${THEME_DIR}"/apps
     cp -r "${SRC_DIR}"/links/categories/{22,symbolic}                                       "${THEME_DIR}"/categories
     cp -r "${SRC_DIR}"/links/mimetypes/symbolic                                             "${THEME_DIR}"/mimetypes
