@@ -92,6 +92,7 @@ install() {
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/apps/22/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/categories/22/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*.svg
+    sed -i "s/#60c0f0/${theme_color}/g" "${THEME_DIR}"/places/scalable/*.svg
 
     cp -r "${SRC_DIR}"/links/actions/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/actions
     cp -r "${SRC_DIR}"/links/devices/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/devices
