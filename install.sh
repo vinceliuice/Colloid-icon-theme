@@ -58,17 +58,7 @@ install() {
   if [[ "${color}" == '-Light' ]]; then
     cp -r "${SRC_DIR}"/src/{actions,apps,categories,devices,emblems,mimetypes,places,status} "${THEME_DIR}"
 
-    if [[ "${theme}" == '' && "${scheme}" == '' && "${notint}" == 'true' ]]; then
-      cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
-    fi
-
-    colors_folder
-
-    if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
-      cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
-      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
-      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
-    fi
+    notint_folder
 
     cp -r "${SRC_DIR}"/links/*                                                               "${THEME_DIR}"
   fi
@@ -92,7 +82,8 @@ install() {
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/apps/22/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/categories/22/*.svg
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,apps,categories,devices,emblems,mimetypes,places,status}/symbolic/*.svg
-    sed -i "s/#60c0f0/${theme_color}/g" "${THEME_DIR}"/places/scalable/*.svg
+
+    notint_folder
 
     cp -r "${SRC_DIR}"/links/actions/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/actions
     cp -r "${SRC_DIR}"/links/devices/{16,22,24,32,symbolic}                                 "${THEME_DIR}"/devices
@@ -136,6 +127,20 @@ install() {
   )
 
   gtk-update-icon-cache "${THEME_DIR}"
+}
+
+notint_folder() {
+    if [[ "${theme}" == '' && "${scheme}" == '' && "${notint}" == 'true' ]]; then
+      cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
+    fi
+
+    colors_folder
+
+    if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
+      cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
+      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
+      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
+    fi
 }
 
 colors_folder() {
