@@ -60,6 +60,10 @@ install() {
 
     notint_folder
 
+    if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
+      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
+    fi
+
     cp -r "${SRC_DIR}"/links/*                                                               "${THEME_DIR}"
   fi
 
@@ -139,7 +143,6 @@ notint_folder() {
     if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
       cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
       sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
-      sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
     fi
 }
 
