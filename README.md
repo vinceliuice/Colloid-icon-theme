@@ -17,6 +17,7 @@ Usage:  `./install.sh`  **[OPTIONS...]**
 -n, --name NAME         Specify theme name (Default: Colloid)
 -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|gruvbox|everforest|catppuccin|all]
 -t, --theme VARIANTS    Specify folder color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+-b, --bold              Install bolder panel icons version (1.5px size)
 -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
 -h, --help              Show help
 ```

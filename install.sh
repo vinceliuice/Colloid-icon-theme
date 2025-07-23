@@ -32,6 +32,7 @@ cat << EOF
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
     -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|gruvbox|everforest|catppuccin|all]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+    -b, --bold              Install bolder panel icons version (1.5px size)
     -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
     -r, --remove, -u, --uninstall   Remove/Uninstall $THEME_NAME icon themes
     -h, --help              Show help
@@ -64,7 +65,11 @@ install() {
       sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
     fi
 
-    cp -r "${SRC_DIR}"/links/*                                                               "${THEME_DIR}"
+    if [[ ${bold:-} == 'true' ]]; then
+      cp -r "${SRC_DIR}"/bold/*                                                             "${THEME_DIR}"
+    fi
+
+    cp -r "${SRC_DIR}"/links/*                                                              "${THEME_DIR}"
   fi
 
   if [[ "${color}" == '-Dark' ]]; then
@@ -79,6 +84,13 @@ install() {
     cp -r "${SRC_DIR}"/src/status/{16,22,24,32,symbolic}                                    "${THEME_DIR}"/status
 
     cp -r "${SRC_DIR}"/dark/*.svg                                                           "${THEME_DIR}"/places/scalable
+
+    if [[ ${bold:-} == 'true' ]]; then
+      cp -r "${SRC_DIR}"/bold/actions/symbolic/*.svg                                        "${THEME_DIR}"/actions/symbolic
+      cp -r "${SRC_DIR}"/bold/apps/symbolic/*.svg                                           "${THEME_DIR}"/apps/symbolic
+      cp -r "${SRC_DIR}"/bold/devices/symbolic/*.svg                                        "${THEME_DIR}"/devices/symbolic
+      cp -r "${SRC_DIR}"/bold/status/*                                                      "${THEME_DIR}"/status
+    fi
 
     # Change icon color for dark theme
     sed -i "s/#363636/#dedede/g" "${THEME_DIR}"/{actions,devices,places,status}/{16,22,24}/*.svg
@@ -352,6 +364,11 @@ while [[ "$#" -gt 0 ]]; do
     -r|--remove|-u|--uninstall)
       remove='true'
       echo -e "\nUninstall icon themes...\n"
+      shift
+      ;;
+    -b|--bold)
+      bold='true'
+      echo -e "\nInstalling 'bold' version..."
       shift
       ;;
     -notint|--notint)
