@@ -535,7 +535,7 @@ install_theme() {
   done
 }
 
-clean_old_theme
+# clean_old_theme
 
 if [[ "${remove}" == 'true' ]]; then
   remove_theme
