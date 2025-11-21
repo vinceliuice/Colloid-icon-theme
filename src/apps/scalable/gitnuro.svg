@@ -1,0 +1,71 @@
+<svg
+   fill="none"
+   viewBox="0 0 56.001999 56.001999"
+   class="h-10 astro-HPNW4VWY"
+   astro-icon="logomark"
+   version="1.1"
+   id="svg3"
+   width="56.001999"
+   height="56.001999"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect
+     width="56.001999"
+     height="56.001999"
+     x="7.0431887e-09"
+     y="7.0431887e-09"
+     fill="#f2f2f2"
+     rx="13.002"
+     ry="13.002"
+     id="rect1-9"
+     style="fill:#a8c3f5;fill-opacity:1" />
+  <g
+     clip-path="url(#astroicon:logomarka)"
+     id="g3"
+     transform="matrix(0.15384615,0,0,0.15384615,3.0010001,3.0010001)">
+    <rect
+       width="325"
+       height="325"
+       fill="#d3efff"
+       rx="73"
+       id="rect1"
+       x="0"
+       y="0" />
+    <path
+       fill="#4898f7"
+       d="m 150,0 h 26 v 325 h -26 z"
+       id="path1" />
+    <path
+       stroke="#ff8888"
+       stroke-width="24"
+       d="m 300,0 0.086,72.671 c 0.065,54.327 -44.077,98.34 -98.404,98.115 L 158.86,170.61"
+       id="path2" />
+    <path
+       stroke="#ff8888"
+       stroke-width="24"
+       d="m 25,0 -0.086,72.671 c -0.065,54.327 44.077,98.34 98.404,98.115 l 42.822,-0.176"
+       id="path3" />
+    <circle
+       cx="163"
+       cy="163"
+       r="68.5"
+       fill="#ffffff"
+       stroke="#2775d1"
+       stroke-width="13"
+       id="circle3" />
+  </g>
+  <defs
+     id="defs3">
+    <clipPath
+       id="astroicon:logomarka">
+      <rect
+         width="325"
+         height="325"
+         fill="#ffffff"
+         rx="73"
+         id="rect3"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+</svg>
