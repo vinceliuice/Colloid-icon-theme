@@ -140,6 +140,14 @@ install() {
     ln -sf mimetypes mimetypes@2x
     ln -sf places places@2x
     ln -sf status status@2x
+    ln -sf actions actions@3x
+    ln -sf apps apps@3x
+    ln -sf categories categories@3x
+    ln -sf devices devices@3x
+    ln -sf emblems emblems@3x
+    ln -sf mimetypes mimetypes@3x
+    ln -sf places places@3x
+    ln -sf status status@3x
   )
 
   gtk-update-icon-cache "${THEME_DIR}"
