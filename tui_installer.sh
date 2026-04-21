@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Repository
-REPO="Burhanverse/colloid-icon-theme"
+REPO="vinceliuice/Colloid-icon-theme"
 
 # Color codes
 RED='\033[0;31m'
