@@ -142,6 +142,22 @@ install() {
     ln -sf status status@2x
   )
 
+  # Only the folder icons (apps, places) change with the accent color, so the
+  # other directories are identical to the default theme of the same scheme and
+  # color. Link them instead of keeping a full copy per accent variant. This is
+  # skipped when the default theme isn't installed (e.g. a single -t variant).
+  if [[ "${theme}" != '' && "${color}" != '' ]]; then
+    local BASE_DIR="${dest}/${name}${scheme}${color}"
+    if [[ -d "${BASE_DIR}" ]]; then
+      for dir in actions categories devices emblems mimetypes status; do
+        if [[ -d "${THEME_DIR}/${dir}" && ! -L "${THEME_DIR}/${dir}" ]]; then
+          rm -rf "${THEME_DIR}/${dir}"
+          ln -sf "../${name}${scheme}${color}/${dir}" "${THEME_DIR}/${dir}"
+        fi
+      done
+    fi
+  fi
+
   gtk-update-icon-cache "${THEME_DIR}"
 }
 
