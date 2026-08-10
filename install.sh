@@ -32,6 +32,8 @@ cat << EOF
     -n, --name NAME         Specify theme name (Default: $THEME_NAME)
     -s, --scheme VARIANTS   Specify folder colorscheme variant(s) [default|nord|dracula|gruvbox|everforest|catppuccin|all]
     -t, --theme VARIANTS    Specify folder color theme variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+    -a, --alternative       Install alternative icons for software center and file-manager
+    -p, --kde-plasma        Replaces Apple logo with KDE Plasma logo.
     -b, --bold              Install bolder panel icons version (1.5px size)
     -notint, --notint       Disable Follow ColorSheme for folders on KDE Plasma
     -r, --remove, -u, --uninstall   Remove/Uninstall $THEME_NAME icon themes
@@ -69,6 +71,18 @@ install() {
       cp -r "${SRC_DIR}"/bold/*                                                             "${THEME_DIR}"
     fi
 
+    if [[ ${alternative:-} == 'true' ]]; then
+      for alt_dir in "${SRC_DIR}"/alternative/*; do
+        if [[ "$(basename "$alt_dir")" != "places" ]]; then
+          cp -r "$alt_dir" "${THEME_DIR}" 2>/dev/null || true
+        fi
+      done
+    fi
+
+    if [[ ${plasma:-} == 'true' ]]; then
+      cp -r "${SRC_DIR}"/plasma/*                                                           "${THEME_DIR}" 2>/dev/null || true
+    fi
+
     cp -r "${SRC_DIR}"/links/*                                                              "${THEME_DIR}"
   fi
 
@@ -90,6 +104,14 @@ install() {
       cp -r "${SRC_DIR}"/bold/apps/symbolic/*.svg                                           "${THEME_DIR}"/apps/symbolic
       cp -r "${SRC_DIR}"/bold/devices/symbolic/*.svg                                        "${THEME_DIR}"/devices/symbolic
       cp -r "${SRC_DIR}"/bold/status/*                                                      "${THEME_DIR}"/status
+    fi
+
+    if [[ ${alternative:-} == 'true' ]]; then
+      cp -r "${SRC_DIR}"/alternative/apps/symbolic/*.svg                                    "${THEME_DIR}"/apps/symbolic 2>/dev/null || true
+    fi
+
+    if [[ ${plasma:-} == 'true' ]]; then
+      cp -r "${SRC_DIR}"/plasma/*                                                           "${THEME_DIR}" 2>/dev/null || true
     fi
 
     # Change icon color for dark theme
@@ -401,6 +423,16 @@ while [[ "$#" -gt 0 ]]; do
     -b|--bold)
       bold='true'
       echo -e "\nInstalling 'bold' version..."
+      shift
+      ;;
+    -a|--alternative)
+      alternative='true'
+      echo -e "\nInstalling 'alternative' version..."
+      shift
+      ;;
+    -p|--kde-plasma)
+      plasma='true'
+      echo -e "\nReplacing Apple logo with KDE Plasma logo..."
       shift
       ;;
     -notint|--notint)
