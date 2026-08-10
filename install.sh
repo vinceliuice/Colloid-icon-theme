@@ -107,6 +107,7 @@ install() {
     cp -r "${SRC_DIR}"/links/status/{16,22,24,32,symbolic}                                  "${THEME_DIR}"/status
     cp -r "${SRC_DIR}"/links/apps/{22,symbolic}                                             "${THEME_DIR}"/apps
     cp -r "${SRC_DIR}"/links/categories/{22,symbolic}                                       "${THEME_DIR}"/categories
+    cp -r "${SRC_DIR}"/links/emblems/symbolic                                               "${THEME_DIR}"/emblems
     cp -r "${SRC_DIR}"/links/mimetypes/symbolic                                             "${THEME_DIR}"/mimetypes
 
     cd "${dest}"
