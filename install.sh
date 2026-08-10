@@ -143,6 +143,29 @@ install() {
     ln -sf status status@2x
   )
 
+  # Only the folder icons (apps, places) change with the scheme and accent
+  # color. Every other directory is identical for all variants of the same
+  # light/dark color, so link them to the default theme instead of keeping a
+  # full copy per variant. Prefer the global default (covers -s all), fall back
+  # to the scheme default (covers a single scheme), and skip linking when no
+  # default is present so a standalone -t variant still installs in full.
+  if [[ "${color}" != '' ]]; then
+    local base=
+    if [[ ( "${theme}" != '' || "${scheme}" != '' ) && -d "${dest}/${name}${color}" ]]; then
+      base="${name}${color}"
+    elif [[ "${theme}" != '' && -d "${dest}/${name}${scheme}${color}" ]]; then
+      base="${name}${scheme}${color}"
+    fi
+    if [[ -n "${base}" ]]; then
+      for dir in actions categories devices emblems mimetypes status; do
+        if [[ -d "${THEME_DIR}/${dir}" && ! -L "${THEME_DIR}/${dir}" ]]; then
+          rm -rf "${THEME_DIR}/${dir}"
+          ln -sf "../${base}/${dir}" "${THEME_DIR}/${dir}"
+        fi
+      done
+    fi
+  fi
+
   gtk-update-icon-cache "${THEME_DIR}"
 }
 
