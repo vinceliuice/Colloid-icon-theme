@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="nodalix-bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#F0F7FF" />
+<stop offset="1" stop-color="#B6D2F5" />
+</linearGradient>
+</defs>
+<rect x="16" y="20" width="224" height="224" rx="52" fill="#172D42" opacity=".13" />
+<rect x="16" y="16" width="224" height="224" rx="52" fill="url(#nodalix-bg)" />
+<rect x="18" y="18" width="220" height="220" rx="50" fill="none" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="2" />
+<svg width="174" height="174" viewBox="0 0 1024 1024" x="41.0" y="41.0" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="linear-gradient-1" x1="619.14" y1="179.734" x2="694.687" y2="396.761" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d63c6" />
+      <stop offset="1" stop-color="#15499e" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="619.14" y1="413.244" x2="790.839" y2="605.547" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#459fff" />
+      <stop offset="1" stop-color="#2379e7" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="632.876" y1="399.508" x2="783.971" y2="968.175" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b66cf" />
+      <stop offset="1" stop-color="#124596" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="207.063" y1="303.357" x2="426.837" y2="968.175" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#258df5" />
+      <stop offset="1" stop-color="#1461da" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="385.63" y1="53.364" x2="522.989" y2="510.769" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#51adff" />
+      <stop offset="1" stop-color="#2b83f1" />
+    </linearGradient>
+  </defs>
+  <title>SolidCraft • blue cutout 36 pt</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="Inner___upper_step___36_pt_cutout" data-name="Inner • upper step • 36 pt cutout" d="M547.883 282.66 L709.797 188.211 L709.797 375.985 Z" fill="url(#linear-gradient-1)" />
+    <path id="Top___lower_step___36_pt_cutout" data-name="Top • lower step • 36 pt cutout" d="M727.797 593.626 L727.797 407.136 L889.571 500.381 Z" fill="url(#linear-gradient-2)" />
+    <path id="Right___milled_recess___36_pt_cutout" data-name="Right • milled recess • 36 pt cutout" d="M530 521.17 L691.797 427.912 L691.797 655.928 L907.594 531.545 L907.594 740.159 L530 957.8 Z" fill="url(#linear-gradient-3)" />
+    <path id="Left___stepped_face___36_pt_cutout" data-name="Left • stepped face • 36 pt cutout" d="M116.406 510.769 L116.406 303.529 L494 521.17 L494 957.8 L314.203 854.167 L314.203 624.777 Z" fill="url(#linear-gradient-4)" />
+    <path id="Top___extruded_profile___36_pt_cutout" data-name="Top • extruded profile • 36 pt cutout" d="M134.374 272.334 L512 53.364 L691.828 157.015 L476.117 282.846 L673.752 396.761 L512 489.993 Z" fill="url(#linear-gradient-5)" />
+  </g>
+</svg></svg>

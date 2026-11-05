@@ -1,3 +1,23 @@
+# Nodalix icon theme
+
+Nodalix maintains this fork of Colloid as the source of its application icons
+and Capitaine-based cursor theme. Upstream Colloid credits and licensing are
+preserved below.
+
+Custom application artwork lives in `src/apps/scalable`. Application IDs and
+short-name aliases live in `links/apps/scalable`. Add a new SVG using its desktop
+application ID and rerun the installer to include it in all theme variants.
+
+The current Craft, ArtCraft Launcher, SolidCraft, Audacity 4 Portable, LACT and
+The Witcher 3 artwork is included. `nodalix/legacy-icons.json` records hashes of
+the previous generated icons so Nodalix OS can adopt those copies while
+preserving independently edited icons. Application names and logos belong to
+their respective projects.
+
+The Nodalix cursor sources, build tool and LGPL license live in
+`cursors/nodalix`. Nodalix OS pins a commit of this repository for both the icon
+and cursor packages so a release uses a reproducible set of artwork.
+
 ## Colloid icon theme
 
 ![1](preview.png?raw=true)

@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "icons": [
+    {
+      "sha256": "259051921528ea3629614d34fe1a595a87332d3798192fb71a314c1164171dfc",
+      "icon": "ai.storyteller.artcraft-launcher"
+    },
+    {
+      "sha256": "be4496e78114bb7ef646d21c8fb74449a2bab766afa82750b5a6149d5272e937",
+      "icon": "ai.storyteller.cadcraft"
+    },
+    {
+      "sha256": "fed5cb82253a0ad201668ff112973c9a6aa9783e3344a43a2f0b276e195e2024",
+      "icon": "ai.storyteller.craft-anything"
+    },
+    {
+      "sha256": "228b6bc1b4bb6d5a1a78b2771303996f0098e77734bd1462511fb94cc4a48d51",
+      "icon": "ai.storyteller.deckcraft"
+    },
+    {
+      "sha256": "8f289a383930997bcda13f003bc98d02f8961413f6668f226bba942c3cde5132",
+      "icon": "ai.storyteller.designcraft"
+    },
+    {
+      "sha256": "d2b18f597b171227b13ccd14cc350cfc23ebd44085d46323f67e8f1786549eaf",
+      "icon": "ai.storyteller.effectcraft"
+    },
+    {
+      "sha256": "2aa80167cd9ce16568244b3d87a1399b3535948e255103b132124dfee4e7d89c",
+      "icon": "ai.storyteller.figcraft"
+    },
+    {
+      "sha256": "3b7683aa03b0534775ccd3e5aa74c9c5816af8d33d3caf46328524e78ad5d2f8",
+      "icon": "ai.storyteller.filmcraft"
+    },
+    {
+      "sha256": "5bbf1a102a9590dc1e26d70a7dcc540d0b8675ad4c59a521332e7cd63bff30a3",
+      "icon": "ai.storyteller.gridcraft"
+    },
+    {
+      "sha256": "08c588543faff70abffff9928798dcc753aedaedd35e896ba32b0ce83cc18d97",
+      "icon": "ai.storyteller.lightcraft"
+    },
+    {
+      "sha256": "b346b9debc454a014f802bba05e0a225ba51214da73f1e1c44463ab8c1446dcf",
+      "icon": "ai.storyteller.materialcraft"
+    },
+    {
+      "sha256": "1ee3a9993a5513e63f6e4a7d41ce8363c61974c055ea6da009e1334f6592cb99",
+      "icon": "ai.storyteller.pdfcraft"
+    },
+    {
+      "sha256": "c48cff42cac957046dbcfc1509b873507255c9de6fc46e49457a29a32096e26c",
+      "icon": "ai.storyteller.photocraft"
+    },
+    {
+      "sha256": "c5b538c223de550752b63fc6fbe56dce760f66039c477d4f8d044a8094189687",
+      "icon": "ai.storyteller.soundcraft"
+    },
+    {
+      "sha256": "3ff368d6b7316c0c3e778ed2642991bbfe166fc52f2898ad2180972de5d52ec2",
+      "icon": "ai.storyteller.texturecraft"
+    },
+    {
+      "sha256": "da1bfc71240e6ef1a2fcefd91d471cc08c614013bcfd9516319a0ed1bc365d5f",
+      "icon": "ai.storyteller.vectorcraft"
+    },
+    {
+      "sha256": "91f0db2914ec761feabd6f199a28dd449b98a64e173615f86eb7ae5f5f420db5",
+      "icon": "ai.storyteller.wordcraft"
+    },
+    {
+      "sha256": "dbaac9c59881627b073988b3e492d8a575b8d6c7bdba48e5756cdee6802fe92e",
+      "icon": "io.tangencylabs.solidcraft"
+    },
+    {
+      "sha256": "cd9509fe0830ce28b2073cc8d11276fc3a96694261ad3df4c623473044828473",
+      "icon": "io.github.ilya_zlobintsev.LACT"
+    },
+    {
+      "sha256": "5ce644ad432f0cb2db77196384ed60300fc7fb548acc4a1653b736b740e3b3fb",
+      "icon": "audacity4"
+    },
+    {
+      "sha256": "b1ef9cb8b51ae15f76a4a60390c2a18a9c5f6232f41efbe06adb6aa1cb6f23d6",
+      "icon": "witcher3"
+    },
+    {
+      "sha256": "83fd63134f715fef503a129b7d8a5e87397b8d4811b55688e71fba91da4531ae",
+      "icon": "audacity4"
+    },
+    {
+      "sha256": "88149c6bf9b0f71442d9aa2787371016ea993aeaaf19ccb19b2beceba0f8f5cc",
+      "icon": "witcher3"
+    }
+  ]
+}

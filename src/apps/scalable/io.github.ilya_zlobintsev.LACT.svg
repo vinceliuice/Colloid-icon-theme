@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="LACT - Graphics Card - Colloid Teal">
+ <defs>
+  <linearGradient id="tile" x1="0.1" y1="0" x2="0.95" y2="1" gradientUnits="objectBoundingBox">
+   <stop offset="0" stop-color="#367C81"/>
+   <stop offset="0.44" stop-color="#275762"/>
+   <stop offset="1" stop-color="#182F40"/>
+  </linearGradient>
+  <linearGradient id="case" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+   <stop offset="0" stop-color="#D9FEF2"/>
+   <stop offset="0.5" stop-color="#B0EBE3"/>
+   <stop offset="1" stop-color="#7DD1CB"/>
+  </linearGradient>
+  <linearGradient id="tileShine" x1="0" y1="0" x2="0.65" y2="1">
+   <stop offset="0" stop-color="#FFFFFF" stop-opacity=".20"/>
+   <stop offset=".65" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="fanHalo">
+   <stop offset="0" stop-color="#7AF1DA" stop-opacity=".36"/>
+   <stop offset=".72" stop-color="#6FE8D5" stop-opacity=".11"/>
+   <stop offset="1" stop-color="#6FE8D5" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="tileClip"><rect x="16" y="15" width="224" height="224" rx="49"/></clipPath>
+ </defs>
+ <!-- Tight Colloid silhouette, no nested tile -->
+ <rect x="16" y="20" width="224" height="224" rx="49" fill="#071C29" opacity=".26"/>
+ <rect x="16" y="15" width="224" height="224" rx="49" fill="url(#tile)"/>
+ <g clip-path="url(#tileClip)">
+  <path d="M16 64 Q16 15 66 15 H190 Q240 15 240 64 V83 C184 36 102 28 16 100 Z" fill="url(#tileShine)"/>
+  <path d="M-5 213 Q122 152 264 235" fill="none" stroke="#8FEEE0" stroke-opacity=".09" stroke-width="20"/>
+  <circle cx="89" cy="123" r="53" fill="url(#fanHalo)"/>
+  <circle cx="166" cy="123" r="53" fill="url(#fanHalo)"/>
+  <!-- a subtle deep silhouette keeps the light GPU separated from the dark tile -->
+  <g transform="translate(26.3 29.4) scale(.80)">
+   <path d="M232,56H16V184H232a8,8,0,0,0,8-8V64A8,8,0,0,0,232,56ZM80,152a32,32,0,1,1,32-32A32,32,0,0,1,80,152Zm96,0a32,32,0,1,1,32-32A32,32,0,0,1,176,152Z" fill="#0B3646" opacity=".92"/>
+   <path d="M232,48H16a8,8,0,0,0-8,8V208a8,8,0,0,0,16,0V192H40v16a8,8,0,0,0,16,0V192H72v16a8,8,0,0,0,16,0V192h16v16a8,8,0,0,0,16,0V192H232a16,16,0,0,0,16-16V64A16,16,0,0,0,232,48Zm0,128H24V64H232Zm-56-16a40,40,0,1,0-40-40A40,40,0,0,0,176,160Zm-24-40a23.74,23.74,0,0,1,2.35-10.34l32,32A23.74,23.74,0,0,1,176,144,24,24,0,0,1,152,120Zm48,0a23.74,23.74,0,0,1-2.35,10.34l-32-32A23.74,23.74,0,0,1,176,96,24,24,0,0,1,200,120ZM80,160a40,40,0,1,0-40-40A40,40,0,0,0,80,160ZM56,120a23.74,23.74,0,0,1,2.35-10.34l32,32A23.74,23.74,0,0,1,80,144,24,24,0,0,1,56,120Zm48,0a23.74,23.74,0,0,1-2.35,10.34l-32-32A23.74,23.74,0,0,1,80,96,24,24,0,0,1,104,120Z" fill="#0D2634" opacity=".22" transform="translate(1.5 3.8)"/>
+   <path d="M232,48H16a8,8,0,0,0-8,8V208a8,8,0,0,0,16,0V192H40v16a8,8,0,0,0,16,0V192H72v16a8,8,0,0,0,16,0V192h16v16a8,8,0,0,0,16,0V192H232a16,16,0,0,0,16-16V64A16,16,0,0,0,232,48Zm0,128H24V64H232Zm-56-16a40,40,0,1,0-40-40A40,40,0,0,0,176,160Zm-24-40a23.74,23.74,0,0,1,2.35-10.34l32,32A23.74,23.74,0,0,1,176,144,24,24,0,0,1,152,120Zm48,0a23.74,23.74,0,0,1-2.35,10.34l-32-32A23.74,23.74,0,0,1,176,96,24,24,0,0,1,200,120ZM80,160a40,40,0,1,0-40-40A40,40,0,0,0,80,160ZM56,120a23.74,23.74,0,0,1,2.35-10.34l32,32A23.74,23.74,0,0,1,80,144,24,24,0,0,1,56,120Zm48,0a23.74,23.74,0,0,1-2.35,10.34l-32-32A23.74,23.74,0,0,1,80,96,24,24,0,0,1,104,120Z" fill="url(#case)"/>
+  </g>
+  <!-- restrained technical indicator, outside the original artwork -->
+  <circle cx="209" cy="86" r="2.2" fill="#8DFCE6" opacity=".9"/>
+ </g>
+ <rect x="17.25" y="16.25" width="221.5" height="221.5" rx="47.75" fill="none" stroke="#B9F8EC" stroke-opacity=".38" stroke-width="2.5"/>
+ <path d="M46 26 C74 22 180 22 208 36" fill="none" stroke="#F3FFF9" stroke-opacity=".43" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
