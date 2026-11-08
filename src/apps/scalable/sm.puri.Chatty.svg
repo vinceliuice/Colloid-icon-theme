@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="64" height="64" viewBox="0 0 64 64"><defs><filter id="colloidPlateShadow" x="-.1" y="-.1" width="1.2" height="1.2" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="0.75" /></filter></defs><rect x="4" y="3.969" width="56.002" height="56.002" rx="13.002" ry="13.002" fill="#000" opacity=".15" filter="url(#colloidPlateShadow)" /><svg width="64" height="64" viewBox="0 0 64 64" x="0" y="0">
+  <rect x="4" y="4" width="56" height="56" rx="13" fill="#dcf3e5" />
+  <svg viewBox="0 0 128 128" style="display:inline;enable-background:new" version="1.0" id="svg11300" height="44" width="44" x="10" y="10">
+  <title id="title4162">Adwaita Icon Template</title>
+  <defs id="defs3" />
+  <metadata id="metadata4">
+    <rdf:RDF>
+      <ns2:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:creator>
+          <ns2:Agent>
+            <dc:title>GNOME Design Team</dc:title>
+          </ns2:Agent>
+        </dc:creator>
+        <dc:source />
+        <ns2:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:title>Adwaita Icon Template</dc:title>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:date />
+        <dc:rights>
+          <ns2:Agent>
+            <dc:title />
+          </ns2:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <ns2:Agent>
+            <dc:title />
+          </ns2:Agent>
+        </dc:publisher>
+        <dc:identifier />
+        <dc:relation />
+        <dc:language />
+        <dc:coverage />
+        <dc:description />
+        <dc:contributor>
+          <ns2:Agent>
+            <dc:title />
+          </ns2:Agent>
+        </dc:contributor>
+      </ns2:Work>
+      <ns2:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <ns2:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <ns2:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <ns2:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+        <ns2:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <ns2:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <ns2:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </ns2:License>
+    </rdf:RDF>
+  </metadata>
+  <g transform="translate(0,-172)" style="display:inline" id="layer1">
+    <g style="display:inline" id="layer9">
+      <g id="g1833" style="display:inline;enable-background:new" transform="translate(-750.75,-1627.5)">
+        <g transform="translate(30.749978,107.50003)" id="g1813" style="display:inline;enable-background:new">
+          <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#c0bfbc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03385742;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect1801" width="80.000015" height="63.999992" x="728" y="1740" rx="15.999992" ry="16.000015" />
+          <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#c0bfbc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03385742;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect1803" width="80.000015" height="63.999992" x="728" y="1740" rx="15.999992" ry="16.000015" />
+          <g id="g1809" transform="translate(720,950)">
+            <path id="path1805" d="m 24.000059,843.99999 v 21.99995 l 25.999924,-21.99995 z" style="fill:#c0bfbc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0112982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            <path style="fill:#f6f5f4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0112982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 24.000059,841.99999 v 21.99995 l 25.999924,-21.99995 z" id="path1807" />
+          </g>
+          <rect ry="16.444468" rx="15.999992" y="1728" x="728" height="74.000023" width="80.000015" id="rect1811" style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#f6f5f4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03432445;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+        </g>
+        <g transform="translate(30.749978,59.500032)" id="g1831" style="display:inline;enable-background:new">
+          <path id="path1815" d="m 823.99992,1818 v 21.9999 L 798,1818 Z" style="fill:#26a269;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0112982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <rect ry="16.000015" rx="16.000023" y="1764" x="760" height="63.999992" width="80.000046" id="rect1817" style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#26a269;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03385742;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <rect style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#2ec27e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03432442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" id="rect1819" width="80.000046" height="73.999901" x="760" y="1752" rx="16.000023" ry="16.444439" />
+          <path style="fill:#2ec27e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0112982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 823.99992,1816 v 21.9999 L 798,1816 Z" id="path1821" />
+          <g style="fill:#ffffff" transform="matrix(1,0,0,-1,748.00003,1998)" id="g1827">
+            <circle transform="rotate(90)" style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.66666484;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="circle1823" cx="220.00005" cy="-43.999966" r="4.0000415" />
+            <circle transform="rotate(90)" style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.66666496;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="circle1825" cx="219.99998" cy="-59.999966" r="3.9999735" />
+          </g>
+          <path d="m 812,1788 a 12,12 0 0 1 -6,10.3923 12,12 0 0 1 -12,0 A 12,12 0 0 1 788,1788" id="path1829" style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+  </svg><path d="M3.998 45.998v1c0 7.203 5.8 13.004 13.004 13.004h29.996c7.203 0 13.004-5.8 13.004-13.004v-1c0 7.203-5.8 13.002-13.004 13.002H17.002A12.975 12.975 0 0 1 3.998 45.998" opacity=".1" /><path fill="#fff" d="M3.998 18.004v-1C3.998 9.801 9.798 4 17.002 4h29.996c7.203 0 13.004 5.8 13.004 13.004v1c0-7.203-5.8-13.002-13.004-13.002H17.002A12.975 12.975 0 0 0 3.998 18.004" opacity=".5" /></svg>
