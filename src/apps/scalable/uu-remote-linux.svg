@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- uu-remote-linux app icon (original artwork, GPL-3.0 with the project): a desktop being reached remotely. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bg)"/>
+  <rect x="26" y="32" width="76" height="52" rx="7" fill="none" stroke="#ffffff" stroke-width="7"/>
+  <path d="M52 98h24M64 84v14" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M46 70l22-22M54 48h14v14" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
